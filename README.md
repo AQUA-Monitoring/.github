@@ -3,61 +3,60 @@
 ## 📌 Padrões de Commit
 
 Os commits devem ser escritos **em inglês** no seguinte formato:  
-`<Classificação>:<mensagem de commit><# da issue>`
+`<tipo>: <mensagem do commit> #número-da-issue`
 
-**Exemplo**: FEAT: Innital commit #01
+**Exemplo:**  
+`feat: create sidebar component #01`
 
-O commit semântico possui os seguintes **elementos estruturais (tipos)**, que indicam a intenção ao utilizador(a) do código:
+Siga a especificação [Conventional Commits](https://www.conventionalcommits.org/) para garantir consistência e compatibilidade com ferramentas de automação.
 
 ---
 
-### Classificação de Commit
+### Tipos de Commit
 
-- **`FEAT`**  
-  Inclui um **novo recurso** no código.  
+- **`feat`**  
+  Adiciona uma **nova funcionalidade** ao código.  
   _(Relacionado ao **MINOR** do versionamento semântico)._
 
-- **`FIX`**  
-  Soluciona um problema (**bug fix**).  
+- **`fix`**  
+  Corrige um **bug**.  
   _(Relacionado ao **PATCH** do versionamento semântico)._
 
-- **`DOCS`**  
-  Indica mudanças na **documentação**, como alterações no README.  
-  _(Não inclui modificações em código)._
+- **`docs`**  
+  Mudanças apenas na **documentação** (ex: README).  
+  _(Sem alterações no código de produção)._
 
-- **`TEST`**  
-  Modifica ou cria **testes unitários**.  
-  _(Não inclui alterações em código)._
+- **`test`**  
+  Adiciona ou modifica **testes unitários**.  
+  _(Sem alterações no código de produção)._
 
-- **`BUILD`**  
-  Relaciona-se a alterações em **arquivos de build e dependências**.
+- **`build`**  
+  Mudanças relacionadas ao **sistema de build ou dependências**.
 
-- **`PERF`**  
-  Identifica alterações de código relacionadas à **performance**.
+- **`perf`**  
+  Alterações de código que **melhoram a performance**.
 
-- **`STYLE`**  
-  Refere-se a **formatações de código** (e.g., semicolons, trailing spaces, lint).  
-  _(Não inclui alterações funcionais no código)._
+- **`style`**  
+  Mudanças de **formatação** (espaços, ponto e vírgula, etc).  
+  _(Sem alterações funcionais)._
 
-- **`REFACTOR`**  
-  Indica **refatorações** que não alteram funcionalidades.  
-  _(Exemplo: melhorar o desempenho ou a estrutura do código)._
+- **`refactor`**  
+  **Refatoração** de código que não corrige bug nem adiciona funcionalidade.
 
-- **`CHORE`**  
-  Indica **atualizações de tarefas** administrativas ou de build.  
-  _(Exemplo: adicionar pacotes no `.gitignore`)._
+- **`chore`**  
+  **Tarefas de manutenção** (ex: atualizar .gitignore, ajustes em ferramentas).
 
-- **`CI`**  
-  Aponta mudanças relacionadas à **integração contínua** (_continuous integration_).
+- **`ci`**  
+  Mudanças na **configuração de integração contínua**.
 
-- **`RAW`**  
-  Refere-se a alterações em **configurações, dados, features ou parâmetros**.
+- **`raw`**  
+  Mudanças em **configurações, dados, features ou parâmetros**.
 
-- **`CLEANUP`**  
-  Remoção de **código comentado ou desnecessário**, aprimorando a legibilidade.
+- **`cleanup`**  
+  Remoção de **código comentado ou desnecessário**.
 
-- **`REMOVE`**  
-  Indica a exclusão de **arquivos, diretórios ou funcionalidades obsoletas**.
+- **`remove`**  
+  Exclusão de **arquivos, diretórios ou funcionalidades obsoletas**.
 
 ---
 
