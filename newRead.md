@@ -18,16 +18,16 @@ A solução integra **câmeras públicas localizadas em pontos estratégicos**, 
 
 ---
 
-Professor: [Marco André Mendes](github.com/marcoandre)
+Professor: [Marco André Mendes](https://github.com/marcoandre)
 
 Equipe:
 
-- [Bianca Isadora Joselli de Souza](github.com/BiancaJoselli)
-- [Helena Soares Pereira](github.com/helenasoaresp)
-- [Matheus Miguel Michalski](github.com/matheusmichalski)
-- [Nicole Ferreira Melo](github.com/nicolefemello)
-- [Rafael August Otto](github.com/rafael-otto)
-- [Vitor André da Silva](github.com/VitorAndreSilva)
+- [Bianca Isadora Joselli de Souza](https://github.com/BiancaJoselli)
+- [Helena Soares Pereira](https://github.com/helenasoaresp)
+- [Matheus Miguel Michalski](https://github.com/matheusmichalski)
+- [Nicole Ferreira Melo](https://github.com/nicolefemello)
+- [Rafael August Otto](https://github.com/rafael-otto)
+- [Vitor André da Silva](https://github.com/VitorAndreSilva)
 
 Links do projeto:
 
