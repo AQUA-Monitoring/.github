@@ -18,7 +18,7 @@ A solução integra **câmeras públicas localizadas em pontos estratégicos**, 
 
 ---
 
-Professor: [Marco André Mendes](https://github.com/marcoandre)
+Professor: [Marco André Mendes](github.com/marcoandre)
 
 Equipe:
 
@@ -31,57 +31,21 @@ Equipe:
 
 Links do projeto:
 
-- Backend: [Repositório](github.com/marcoandre/pi-backend) e [Publicação](https://aqua.fabricadesoftware.ifc.edu.br/)
-- Frontend: [Repositório]([https://aqua.fabricadesoftware.ifc.edu.br/]) e [Publicação](hhttp://aquaapi.fabricadesoftware.ifc.edu.br/)
+- Backend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_backend) e [Publicação](https://aqua.fabricadesoftware.ifc.edu.br/)
+- Frontend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_frontend) e [Publicação](http://aquaapi.fabricadesoftware.ifc.edu.br/)
 - [Requisitos](https://docs.google.com/document/d/1A_C9lhOZsPZwYGqqcZxbWc6av3OE1GLHt0uzGKmLIPI/edit?tab=t.3zpt241go3s)
 - [Regras de Negócio](https://docs.google.com/document/d/1A_C9lhOZsPZwYGqqcZxbWc6av3OE1GLHt0uzGKmLIPI/edit?tab=t.3zpt241go3s)
 
-**Como usar esse modelo para o Projeto Integrador**
-
-_(Essa parte pode ser apagada depois.)_
-
-1. Faça um fork desse repositório para a sua conta do GitHub.
-2. Clone o repositório para o seu computador.
-3. Abra o arquivo README.md no seu editor de texto favorito (recomendamos o [Visual Studio Code](https://code.visualstudio.com/)).
-4. Tenha instaladas as seguintes extensões:
-   - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-   - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
-5. Edite o arquivo README.md com as informações do seu projeto.
-
 # 1. Desenvolvimento
-
-_(Escolha um dos modelos de sistemas para desenvolver o projeto. Apague as informações desnecessárias depois.)_
-
-- As equipes serão avaliadas por cada etapa da documentação e entregas realizadas.
-- Cada equipe deverá escolher um sistema para o desenvolvimento das atividades, a partir dos modelos apresentados.
 
 **1.1 Modelos de Sistemas**
 
-**Nessa parte a equipe deve escolher um dos modelos de sistemas para desenvolver o projeto. Ao escolher, escreva uma breve descrição do sistema e o motivo da escolha e pode apagar os outros modelos.**
-
-**1.1.1 Ponto de Vendas (PDV)**
-
-**Gerenciamento de vendas para uma padaria**
-
-O nosso cliente, Sr. Genival, tem uma padaria de bairro chamada padaria Pão Genial e, devido a qualidade de seus produtos, ela está crescendo rapidamente. Recentemente, ele contratou mais funcionários para atendimento, caixa, panificação, etc.
-Assim, atualmente, ele consegue concentrar seus esforços para melhorar a gestão da padaria. Para isso, ele quer instalar um sistema de controle de vendas que permita ao caixa lançar as vendas realizadas. Como sua intenção
-é melhorar a gestão do negócio, é muito importante que ele consiga ter
-relatórios, como por exemplo, de vendas.
-
-**1.1.2 Empréstimo**
-
-**Gerenciamento de uma biblioteca**
-
-Uma ONG, chamada Sala Arco Íris, ajuda crianças de baixa renda em sua educação básica. Atualmente, recebeu uma doação de mais de 1000 livros e está montando a sua biblioteca. Eles querem emprestar os livros para as crianças e os pais das crianças. Apesar de
-terem um computador e as estantes necessárias à disposição nessa nova biblioteca, não possuem verba suficiente para um leitor de impressão digital ou para produção
-de carteirinhas para todas as crianças. Para isso, eles precisam de um sistema que gerencie todo o acervo, empréstimos, livros disponíveis, etc. mas que isso ocorra de maneira simples e sem necessidade de novos gastos. Também é importante que haja relatórios, permitindo o controle dos empréstimos e dos livros disponíveis no acervo.
-
 **1.1.3 Ordem de Serviço (O.S.)**
 
-**Manutenção de computadores**
+**Ocorrência de Alagamentos**
 
-Sr. Sálvio, nosso cliente, fez um curso de manutenção de celulares e smartphones e decidiu abrir um negócio no qual ele é responsável pelos consertos e sua esposa, Marília, realiza o atendimento aos clientes. Com sua visão empreendedora, ele sentiu a necessidade de um software que auxilie sua esposa nas tarefas diárias. Para isso, ele deseja um sistema que gerencie os clientes, orçamentos, serviços e retirada dos equipamentos. Sendo um negócio pequeno, é muito importante para ele conseguir ter relatórios que o ajudem na gestão da empresa, como o status dos serviços.
-
+Joinville enfrenta recorrentes alagamentos e enchentes devido à sua posição geográfica entre morros e bacias hidrográficas, além de fatores urbanos que dificultam o escoamento das águas da chuva. Diante dessa situação, surgiu a necessidade de uma solução que auxilie no monitoramento dessas ocorrências. 
+Para isso, foi proposto o desenvolvimento do sistema AQUA, uma aplicação web voltada ao acompanhamento de áreas com risco de alagamento. O sistema utilizará câmeras públicas instaladas em pontos estratégicos da cidade e técnicas de visão computacional para analisar imagens em tempo real e compará-las com registros históricos. Dessa forma, será possível identificar áreas afetadas com maior precisão e disponibilizar informações que auxiliem na prevenção de riscos.
 # 2. Situação Problema
 
 _(Nessa parte a equipe deve descrever a situação problema que será resolvida pelo sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.)_
@@ -122,79 +86,67 @@ precisaremos ser bem detalhistas, todavia agora a intenção é apenas fazer alg
 
 # 4. Modelagem de Dados
 
-(_Nessa parte a equipe deve descrever a modelagem de dados que será implementada no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois._)
+A modelagem de dados do sistema **AQUA** foi definida por meio de um Diagrama Entidade-Relacionamento (DER), que representa as principais entidades do sistema e seus relacionamentos.
 
-Defina as entidades e relacionamentos que farão parte do sistema. Desenhe o diagrama de entidade-relacionamento (DER) e descreva as entidades e relacionamentos que farão parte do sistema.
+A entidade **User** armazena os dados dos usuários da plataforma, enquanto **Address** registra as informações de localização associadas a usuários, organizações e câmeras. A entidade **NGO** representa organizações que podem atuar em ações de apoio à população.
+
+O sistema também possui as entidades **Camera** e **Flood_Point**, responsáveis por registrar as câmeras utilizadas no monitoramento e os pontos de alagamento identificados. As entidades **Neighborhood** e **Region** organizam as informações geográficas da cidade.
+
+Além disso, o sistema registra dados meteorológicos por meio das entidades **Weather** e **Forecast**, que armazenam informações climáticas e previsões do tempo. As entidades **Protocol**, **Response** e **Occurrence** são utilizadas para registrar ocorrências e ações relacionadas a eventos monitorados.
+
+Por fim, **Notification** armazena notificações geradas pelo sistema e **Donation** registra doações realizadas, incluindo o tipo de pagamento armazenado em **Payment_Type**.
 
 # 4. Regras de negócio
 
-(_Nessa parte a equipe deve descrever as regras de negócio que serão implementadas no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois._)
+**RN01** – O sistema deve permitir o cadastro de usuários com nome, e-mail, data de nascimento e senha.
 
-As **Regras de negócio** são orientações e restrições que ajudam a regular as operações de uma empresa. **Regras** foram criadas para **colaborar com o funcionamento**, seja da sociedade, de uma escola, de um jogo, etc. Não seria diferente nas organizações. Vamos abordar melhor sobre esse assunto. Entender o que são as regras de negócio, sua importância, como são aplicadas e
-automatizadas na gestão por processo.
+**RN02** – Apenas usuários administradores poderão acessar funções de gerenciamento do sistema.
 
-**4.1 O que são regras de negócio?**
+**RN03** – O cadastro, edição e remoção de pontos de monitoramento será restrito a usuários administradores.
 
-Um negócio funciona por processos que, por sua vez, são formados por atividades relacionadas entre si.
+**RN04** – Cada ponto de monitoramento deve possuir coordenadas geográficas válidas (latitude e longitude).
 
-As funções das áreas de compras, estoque, logística, finanças, vendas e marketing, por exemplo, compõem um processo de fornecimento de um produto ao cliente.
+**RN05** – Os pontos monitorados devem estar localizados dentro da região de Joinville ou áreas próximas.
 
-Dentro desses processos, existem regras que devem ser seguidas durante a execução das atividades, que ajudam a definir **COMO** as operações devem ser realizadas e gerenciadas, **POR QUEM**, **QUANDO**, **ONDE** e **POR QUÊ**.
+**RN06** – O sistema deve registrar dados climáticos associados a cada ponto monitorado.
 
-Podemos dizer que as regras de negócio são **limites impostos às operações**, de forma que elas sigam corretamente em direção às políticas e aos objetivos da instituição.
+**RN07** – Os dados climáticos devem incluir informações como precipitação, umidade do ar, pressão atmosférica e vazão do rio.
 
-**4.2 Regras para a criação de regras de negócio**
+**RN08** – O sistema deve armazenar o histórico de registros de monitoramento para consultas futuras.
 
-De maneira geral, as regras de negócio devem:
+**RN09** – A visualização completa do histórico de registros será restrita a usuários administradores.
 
-- Ser **simples**, isto é, ter apenas uma função.
-- Ser **completas**, com início, meio e fim.
-- Ser possíveis de **mensurar** e **rastrear**.
-- Estar em consonância com a **legislação**.
-- Estar **atualizadas** e sempre **revisadas**.
-- Refletir a **política** e os **valores** da organização.
-- Ser **inteligíveis** para os colaboradores e envolvidos no processo.
+**RN10** – O sistema deve calcular a probabilidade de alagamento com base em dados ambientais e históricos.
 
-**4.3 Por que ter regras de negócio?**
+**RN11** – A probabilidade de alagamento será gerada por um modelo de aprendizado de máquina.
 
-- **Padronização de processos:** padronizam os processos e auxiliam a fluirem de forma mais eficiente e automatizada.
-- **Controle de processos:** auxiliam no controle de processos, pois falhas são identificadas e corrigidas mais rapidamente.
-- **Tomada de decisão:** auxiliam na tomada de decisão e no cumprimento de estratégias pré-estabelecidas.
+**RN12** – O sistema deve atualizar periodicamente os indicadores de risco de alagamento.
 
-**4.4 Exemplos de regras de negócio**
+**RN13** – Cada ponto monitorado deve possuir um índice de risco de alagamento associado.
 
-- Em um controle de qualidade de granja, pode-se dizer que a cada 100 ovos impróprios para consumo, o lote será descartado.
-- Em um banco, clientes com faturamento mensal de mais de R$ 25 mil e CPF sem restrições, serão atendidos pelo gerente Premium pessoa física.
-- Para conclusão de licitações, devem ser feitos três orçamentos e o vencedor será sempre o de menor preço final.
-- Em um processo de seleção de RH, o candidato só pode ser aprovado se tiver mais de 5 anos de experiência na área, diploma de pós-graduação, espanhol fluente e pretensão salarial abaixo de R$ 8.000,00.
-- Em um processo de vendas, o vendedor só pode vender um produto se o cliente tiver mais de 18 anos, renda familiar acima de R$ 5.000,00 e não tiver restrições no CPF.
-- Em um processo de compras, o fornecedor só pode ser contratado se tiver nota fiscal, certificado de qualidade e preço abaixo de R$ 10,00 por unidade.
-- Em um processo de logística, o pedido só pode ser enviado se o cliente tiver mais de 18 anos, endereço de entrega no mesmo estado e não tiver restrições no CPF.
+**RN14** – O sistema deve classificar o nível de risco conforme níveis de criticidade definidos.
 
-**4.5 Como escrever regras de negócio?**
+**RN15** – Os níveis de criticidade disponíveis devem ser: Crise, Alerta, Atenção, Mobilização e Normalidade.
 
-- Número identificador.
-- Nome da regra.
-- Data de criação e data da última alteração para comparações e
-  controle.
-- Nome dos Autores das versões.
-- Número da versão (1, 2 etc).
-- Dependências: insira o identificador das regras atreladas, às quais a regra em questão depende.
-- Uma descrição detalhada para compreensão da regra.
+**RN16** – O sistema deve gerar notificações quando o índice de risco ultrapassar limites estabelecidos.
 
-**4.6 Exemplos de regras de negócio com formatação**
+**RN17** – As notificações devem estar associadas a regiões ou pontos monitorados.
 
-- **RN01 – Criação Comanda:** Para iniciar um atendimento no balcão, é necessário primeiro abrir uma nova comanda.
-- **RN02 – Inserir Produtos Comanda:** Para inserir um produto na comanda, é necessário que o produto esteja cadastrado no sistema e que a quantia comprada seja acima de zero.
-- **RN03 – Cadastro de Leitores:** Os leitores precisam fazer o cadastro para realizar o empréstimo.
-- **RN04 – Realizar Empréstimo:** Para realizar o empréstimo, apenas leitores com cadastro e nenhuma multa em aberto.
-- **RN05 – Registro de Empréstimo:** O gerente deve possuir acesso aos registros de empréstimos.
-- **RN06 – Pagamento de Multa:** O leitor que passar de 15 dias com o livro deverá pagar a multa de um real por dia de atraso.
-- **RN07 – Impressão de Orçamento:** Com as informações do
-  orçamento registradas, a atendente deve imprimir o orçamento e
-  repassar ao cliente para aprovação, e caso o cliente aprovar, a atendente deve solicitar a sua assinatura para aprovar a execução do serviço.
-- **RN08 – Abertura de OS:** Com o atendimento aprovado pelo cliente, a atendente deverá inserir os dados do cliente e do orçamento em um novo documento, para registros internos, realizando a abertura da OS.
-- **RN09 – Relatório de Fluxo de Caixa:** O relatório de fluxo de caixa será permitido somente para o administrador.
+**RN18** – O sistema deve registrar o histórico de notificações enviadas.
+
+**RN19** – Os usuários poderão ativar ou desativar o recebimento de notificações por e-mail.
+
+**RN20** – O sistema deve monitorar alterações nos indicadores de risco em tempo real.
+
+**RN21** – O sistema deve permitir o registro de ocorrências relacionadas a eventos de alagamento.
+
+**RN22** – Cada ocorrência deve possuir informações de localização e situação do evento.
+
+**RN23** – O sistema deve integrar dados provenientes de câmeras públicas para apoio ao monitoramento.
+
+**RN24** – As câmeras cadastradas devem possuir identificação, localização e status de funcionamento.
+
+**RN25** – O sistema deve registrar estatísticas de acesso e consulta aos dados de monitoramento.
 
 # 5. Requisitos funcionais
 
@@ -350,102 +302,26 @@ negócio. Lembre-se que, diferentemente das entradas e processos, aqui os dados 
 
 # 6. Requisitos não funcionais
 
-Requisitos não funcionais (**RNFs**) são as restrições impostas a um sistema que definem seus atributos de qualidade.
+**RNF001** – O sistema deve armazenar senhas de forma criptografada, utilizando algoritmo seguro (ex.: bcrypt ou Argon2).
 
-Eles geralmente são indicados por adjetivos como **segurança**, **desempenho** e **escalabilidade**.
+**RNF002** – O sistema deve utilizar protocolo HTTPS em todas as requisições para garantir a confidencialidade e integridade dos dados transmitidos.
 
-**6.1 Categorias de requisitos não funcionais**
+**RNF003** – O sistema deve carregar a página inicial em até 5 segundos em condições normais de rede.
 
-Os requisitos não funcionais são importantes porque ajudam a garantir que o sistema atenda às necessidades do usuário.
+**RNF004** – O sistema deve estar disponível 24 horas por dia, 7 dias por semana, com no mínimo 99% de uptime mensal.
 
-Os Requisitos Não Funcionais explicam as limitações e restrições do sistema a ser projetado. **Esses requisitos não têm nenhum
-impacto na funcionalidade do aplicativo.** Além disso, existe uma prática comum de subclassificar os requisitos não funcionais em várias categorias:
+**RNF005** – O sistema deve realizar backups automáticos semanais do banco de dados.
 
-- Interface de Usuário
-- Confiabilidade
-- Segurança
-- Atuação
-- Manutenção
+**RNF006** – O sistema deve ser responsivo e se adaptar automaticamente a diferentes resoluções de tela (desktop, tablet e mobile).  
+Responsável: Nicole (Vue)
 
-Os requisitos não funcionais podem ser divididos em duas categorias:
+**RNF007** – O sistema deve disponibilizar interface intuitiva, priorizando navegação simplificada e conteúdo objetivo.  
+Responsáveis: Rafael, Bianca e Nicole (Figma e Vue)
 
-1. **Atributos de qualidade:** Estas são as características do sistema que determinam sua qualidade geral. Exemplos de atributos de qualidade incluem segurança, desempenho e usabilidade.
-2. **Restrições:** Estas são as limitações impostas ao sistema.
-   Exemplos de restrições incluem tempo, recursos e ambiente.
+**RNF008** – O sistema deve ser desenvolvido utilizando Clean Architecture e Domain Driven Design, permitindo fácil manutenção e expansão.  
+Responsáveis: Vitor, Matheus e Nicole (Vue e Django)
 
-**6.2 Vantagens dos requisitos não funcionais**
-
-Os requisitos não funcionais ajudam a garantir que o sistema seja:
-
-1. Adaptado às necessidades do usuário.
-2. Adequado à finalidade.
-3. Escalável, seguro e confiável.
-4. Fácil de usar e manter.
-
-**6.3 Exemplos de requisitos não funcionais**
-
-Aqui estão alguns exemplos de requisitos não funcionais:
-
-1. **Segurança**: O sistema deve ser protegido contra acesso não
-   autorizado.
-2. **Atuação**: O sistema deve ser capaz de lidar com o número necessário
-   de usuários sem qualquer degradação no desempenho.
-3. **Escalabilidade**: O sistema deve ser capaz de aumentar ou diminuir
-   conforme necessário.
-4. **Disponibilidade**: O sistema deve estar disponível quando necessário.
-5. **Manutenção**: O sistema deve ser fácil de manter e atualizar.
-6. **Portabilidade**: O sistema deve ser capaz de rodar em diferentes
-   plataformas com alterações mínimas.
-7. **Confiabilidade**: O sistema deve ser confiável e atender aos requisitos
-   do usuário.
-8. **Usabilidade**: O sistema deve ser fácil de usar e entender.
-9. **Compatibilidade**: O sistema deve ser compatível com outros sistemas.
-10. **Conformidade**: O sistema deve cumprir todas as leis e regulamentos
-    aplicáveis.
-
-**6.4 Exemplo de organização dos requisitos não funcionais**
-
-(_A seguir, um exemplo de organização de requisitos não funcionais._)
-
-**Requisitos não funcionais:**
-
-- **R.N.F. 01 - Nome do requisito não funcional:** descrição do requisito.
-- **R.N.F. 02 - Nome do requisito não funcional:** descrição do requisito.
-
-**Exemplos de requisitos não funcionais:**
-
-**Sistema de Padaria**:
-
-- **R.N.F. 01 - Navegador homologado:** O sistema deverá ser homologado para os navegadores Google Chrome e Mozilla Firefox.
-- **R.N.F. 02 - Processador:** É recomendado para o sistema no mínimo um processador Intel i3, similar ou superior a geração 7100 ou AMD Ryzen 3 da geração similar ou superior ao 3100, para que o servidor funcione em sua melhor performance.
-- **R.N.F. 03 - Memória RAM:** é recomendável que o sistema possua no mínimo 2GB de RAM para melhor performance.
-- **R.N.F. 04 - Arquitetura:** Será utilizada a arquitetiura MVC para o desenvolvimento do sistema, com uso de uma API REST para comunicação com o banco de dados.
-- **R.N.F. 05 - Banco de dados:** O sistema será implementado com o banco de dados MySQL.
-- **R.N.F. 06 - Conexão com banco de dados:** Para conexão com o banco de dados, o sistema utilizará a ferramenta de MySQL Connector.
-- **R.N.F. 07 - Implementação:** O sistema deverá ser desenvolvido com linguagem Python, Javascript, HTML5, CSS3 e SQL.
-- **R.N.F. 08 - Segurança:** Ficará a critério do responsável do estabelecimento a segurança dos acessos ao sistema, tendo consciência das pessoas que possua permissão para acesso.
-- **R.N.F. 09 - Ambiente de Desenvolvimento Integrado (IDE):** Para criação do sistema, será utilizado o editor de texto Visual Studio Code.
-- **R.N.F. 10 - Disponibilidade:** O sistema irá atender 99% do tempo de uso, somente ocorreria problemas de cadastro, remoção, inserção ou alteração em casos de falta de rede ou energia.
-- **R.N.F. 11 - Legais:** O sistema deve atender às exigências da LGPD (Leis Gerais da Proteção de Dados).
-
-**Sistema de Ordem de Serviço:**
-
-- **R.N.F. 01 - Navegadores homologados:** o sistema deverá ser homologado para os navegadores Google Chrome e Mozilla Firefox.
-- **R.N.F. 02 - Tecnologia Front-end:** Para a exibição em front-end, o software utilizará o CSS3 e o HTML5, além do framework Vue.js.
-- **R.N.F. 03- Tecnologia Back-end:** O software será desenvolvido pela linguagem de programação Python, com o framework Django e a API REST com Django REST Framework.
-- **R.N.F. 04 - Interoperabilidade:** O banco de dados será o MySQL, com a linguagem SQL de banco, sendo todo produzido através do MySQL Workbench .
-- **R.N.F. 05 - Forma de uso do software:** O sistema por fazer parte de um ambiente interno, provavelmente será utilizado de acordo com as horas de trabalho da empresa, mas estará ativo 24 horas por dia em 7 dias por semana.
-- **R.N.F. 06 - Desempenho:** Para a utilização correta e com uma qualidade e eficiência melhor, é recomendado que se use o SO mais atualizado, com recursos de hardware equivalentes a um processador intel i3 5°Gen ou semelhante, e 8GB de memória RAM, assim como os navegadores homologados.
-- **R.N.F. 07- Autenticação:** Para realizar o acesso ao sistema é necessário ter um usuário de autenticação criado pelo administrador, além da possibilidade de solicitar um envio de redefinição de senha.
-- **R.N.F. 08 - Web Server:** O servidor web utilizado será o Apache Tomcat, nas versões mais atualizadas.
-- **R.N.F. 09 - Níveis de segurança:** O software terá diferentes tipos de acesso para cada tipo de login, tendo as permissões ideais a função de cada um.
-
-**6.6 Conclusão**
-
-Requisitos não funcionais são essenciais para qualquer sistema. Eles ajudam a garantir que o sistema atenda às necessidades do usuário e seja capaz de funcionar como pretendido.
-
-É importante considerar cuidadosamente todos os requisitos não funcionais antes de projetar e desenvolver um sistema.
-Eles ajudam a garantir que o sistema atenda às necessidades do usuário e seja capaz de funcionar como pretendido.
+**RNF009** – O sistema deve manter logs de erros e acessos, permitindo auditoria e monitoramento.
 
 # 7. Diagrama de Caso de Uso
 
