@@ -38,51 +38,50 @@ Links do projeto:
 
 # 1. Desenvolvimento
 
-**1.1 Modelos de Sistemas**
-
-**1.1.3 Ordem de Serviço (O.S.)**
+**Ordem de Serviço (O.S.)**
 
 **Ocorrência de Alagamentos**
 
 Joinville enfrenta recorrentes alagamentos e enchentes devido à sua posição geográfica entre morros e bacias hidrográficas, além de fatores urbanos que dificultam o escoamento das águas da chuva. Diante dessa situação, surgiu a necessidade de uma solução que auxilie no monitoramento dessas ocorrências. 
 Para isso, foi proposto o desenvolvimento do sistema AQUA, uma aplicação web voltada ao acompanhamento de áreas com risco de alagamento. O sistema utilizará câmeras públicas instaladas em pontos estratégicos da cidade e técnicas de visão computacional para analisar imagens em tempo real e compará-las com registros históricos. Dessa forma, será possível identificar áreas afetadas com maior precisão e disponibilizar informações que auxiliem na prevenção de riscos.
+
 # 2. Situação Problema
 
-_(Nessa parte a equipe deve descrever a situação problema que será resolvida pelo sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.)_
+A empresa fictícia **AQUA Monitoramento Ambiental** desenvolveu um sistema voltado ao acompanhamento de condições climáticas e ao monitoramento de áreas com risco de alagamento em Joinville. O sistema foi criado com o objetivo de auxiliar a Defesa Civil e a população no acompanhamento de situações de risco relacionadas a chuvas intensas, transbordamento de rios e acúmulo de água em vias urbanas.
 
-![Ciclo da Venda](docs/ciclo_da_venda.webp "Ciclo da Venda")
+O projeto foi idealizado por uma equipe de desenvolvedores interessados em utilizar tecnologia e análise de dados para melhorar a prevenção de desastres naturais nas cidades. O sistema busca reunir informações ambientais e geográficas em uma única plataforma, facilitando o acesso a dados importantes para tomada de decisões em momentos de risco.
 
-Descrevem o que acontece atualmente na empresa em um contexto global,
-abordando o funcionamento da empresa como um todo, não apenas os “problemas” que lá ocorrem.
+---
 
-Sabendo disso, seu papel é **detalhar o funcionamento da empresa escolhida na
-atualidade, ou seja, antes de seu novo software**, usando como base a situação que passamos, mas aprofundando os detalhes de como as coisas acontecem.
+Atualmente, a **Defesa Civil** enfrenta dificuldades relacionadas ao acompanhamento de áreas com risco de alagamento. Grande parte do trabalho realizado por esses órgãos ainda depende de processos manuais e da consulta a diversas fontes de informação separadas.
 
-- Pesquise sobre empresas do ramo escolhido
-  para entender como funcionam;
-- Aproveite seus conhecimentos previamente adquiridos na área da empresa que escolheu, se houver;
-- Simule uma situação real. Lembre-se que são propostas com empresas fictícias, sendo assim, você terá que tomar certas decisões sobre como a empresa funciona em relação às coisas que não estão definidas no documento base (por exemplo, no caso da padaria, dizemos que seu Genival contratou mais funcionários, mas saber quantos e o que fazem pode ser relevante para o software), então tente “visualizar” a empresa funcionando, como se você estivesse lá acompanhando o dia-a-dia;
+Em muitos casos, os profissionais precisam acessar diferentes plataformas para verificar dados meteorológicos, níveis de chuva, condições de rios e registros históricos de enchentes. Essas informações nem sempre estão centralizadas em um único sistema, o que torna o processo de análise mais demorado e complexo.
 
-Seguindo essas dicas, você deve ser capaz de descrever o dia-a-dia da empresa selecionada. E para ajudar na organização do texto, indicamos uma abordagem em 3 etapas:
+Além disso, o acompanhamento de ocorrências em tempo real pode exigir a consulta de câmeras públicas, registros de chamados da população e dados meteorológicos atualizados. Como essas informações estão distribuídas em diferentes sistemas ou plataformas, os profissionais responsáveis pelo monitoramento precisam reunir manualmente esses dados para compreender a situação de determinada região.
 
-- **Introdução**: comece com um parágrafo apresentando a empresa (nome, o que faz, tempo de existência, o dono, funcionários, etc);
-- **Situação-problema**: Aborde em detalhes como a empresa funciona, procurando seguir uma ordem lógica dos acontecimentos e organizando parágrafos diferentes para cada coisa diferente que for explicar (como faria em uma redação);
-- **Conclusão**: tenha um parágrafo de conclusão focando nos problemas que você notou dentro da situação problema analisada e aponte brevemente como um software poderia ajudar a resolvê-los.
+Esse cenário pode dificultar a identificação rápida de áreas com maior risco de alagamento, especialmente durante períodos de chuvas intensas. A falta de uma visualização centralizada das informações também pode tornar mais difícil o planejamento de ações preventivas ou emergenciais.
+
+Pensando nesses desafios, surgiu a proposta do sistema **AQUA**, que busca reunir diferentes tipos de informações ambientais em uma única plataforma digital. O sistema permite visualizar dados climáticos, acompanhar regiões monitoradas e identificar áreas com maior probabilidade de alagamento por meio de mapas e indicadores.
+
+---
+
+Diante desse contexto, percebe-se que a ausência de ferramentas integradas pode tornar o trabalho de monitoramento ambiental mais lento e complexo para órgãos como a Defesa Civil. A necessidade de consultar diversas fontes de informação e reunir dados manualmente pode dificultar a análise rápida das condições climáticas e dos riscos existentes em determinadas regiões.
+
+Com a utilização do sistema **AQUA**, torna-se possível centralizar informações importantes em uma única plataforma, facilitando a visualização dos dados e o acompanhamento das condições ambientais. Dessa forma, o sistema pode contribuir para melhorar o monitoramento de áreas com risco de alagamento e auxiliar na tomada de decisões em situações de emergência.
 
 # 3. Descrição da proposta
 
-Após entender o problema, proponha uma solução que será útil nos aspectos de dificuldade encontrados. Assim, aqui você deverá **explicar de maneira resumida, e preferencialmente mais textual, como o software funcionará**. Pense nesse texto como uma **introdução ao seu cliente** do que você pretende fazer por ele, para que ele confirme se realmente está dentro do desejado e permita sua continuidade.
+## Proposta de Solução
 
-**Alguns pontos importantes a se destacar são:**
+Diante das dificuldades no monitoramento de áreas com risco de alagamento, propõe-se o desenvolvimento do **AQUA**, um sistema digital que reúne informações em uma única plataforma. O objetivo do software é **auxiliar no acompanhamento de regiões com risco de alagamento**, facilitando o acesso a dados que hoje estão espalhados em diferentes fontes.
 
-- **Qual o foco de ação do software** relacionado com os problemas levantados na análise da situação-problema. O que realmente o software vai fazer. Por exemplo, o foco de ação do Gmail é permitir o envio e recebimento de e-mails.
-- **Os níveis de usuário do sistema**. Somente o gestor tem acesso? E os funcionários? Talvez seja para ambos, ou para funcionários de cargos
-  diferentes, etc.
-- **O que poderá ser feito no software**.Apenas o principal, sem pensar em telas ou detalhes específicos, pois isso será feito em outro momento.
-- **Se houver mais de um nível de usuário**, ressaltar as diferenças entre eles na descrição da proposta.
+O sistema permitirá acompanhar situações de risco por meio de **câmeras públicas localizadas em pontos estratégicos da cidade**, possibilitando a visualização de determinadas áreas em tempo real. Essas imagens serão utilizadas para auxiliar na identificação de possíveis alagamentos e no acompanhamento das condições das ruas.
 
-Tenha em mente que essa é uma etapa relativamente breve. Não é necessário um texto gigantesco, apenas dar uma noção do funcionamento do sistema. Mais adiante
-precisaremos ser bem detalhistas, todavia agora a intenção é apenas fazer algo que permita ao cliente nos dizer se estamos no caminho certo.
+O **AQUA** terá **dois tipos de usuários**. O primeiro é o **usuário público**, que poderá acessar o sistema para visualizar o mapa com os pontos monitorados, consultar regiões com risco de alagamento e acompanhar as imagens das câmeras disponíveis.
+
+O segundo é o **administrador**, responsável por gerenciar as informações do sistema. Esse usuário poderá **cadastrar pontos de monitoramento, registrar ocorrências e adicionar câmeras utilizadas no acompanhamento das regiões**.
+
+Com o **AQUA**, as informações sobre possíveis alagamentos ficam **centralizadas e mais fáceis de visualizar**, ajudando órgãos como a Defesa Civil no monitoramento das áreas de risco e permitindo que a população tenha acesso a informações importantes sobre a situação das regiões monitoradas.
 
 # 4. Modelagem de Dados
 
@@ -150,155 +149,377 @@ Por fim, **Notification** armazena notificações geradas pelo sistema e **Donat
 
 # 5. Requisitos funcionais
 
-(_Nessa parte a equipe deve descrever os requisitos funcionais que serão implementados no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois._)
+## Entradas
 
-**5.1 O que são requisitos funcionais?**
+**R.F. 01 – Registro de Usuários:**  
+Permite o cadastro de novos usuários no sistema para possibilitar acesso às funcionalidades da plataforma.
 
-Um requisito funcional é uma declaração de como um sistema deve se comportar. Define o que o sistema deve fazer para atender às necessidades ou expectativas do usuário. Os requisitos funcionais podem ser pensados ​como recursos que o usuário detecta.
+Dados necessários: nome, e-mail, data de nascimento, senha.  
+Usuários: visitantes.
 
-Os requisitos funcionais são compostos de duas partes:
-**função** e **comportamento**.
+---
 
-- A **função** é o que o sistema **faz**. Por exemplo: _“calcular imposto sobre vendas”_.
-- O **comportamento** é **como** o sistema faz. Por exemplo: _“O sistema deve calcular o imposto sobre vendas multiplicando o preço de compra pela alíquota do imposto.”_.
+**R.F. 02 – Autenticação de Usuários:**  
+Permite que o usuário acesse o sistema utilizando credenciais válidas ou autenticação via conta Google.
 
-**5.2 Tipos de requisitos funcionais**
+Dados necessários: e-mail, senha, conta Google (OAuth).  
+Usuários: todos os usuários.
 
-Os requisitos funcionais podem ser classificados em:
+---
 
-- Regulamentos de Negócios
-- Requisitos de Certificação
-- Requisitos de relatório
-- Funções Administrativas
-- Níveis de autorização
-- Rastreamento de auditoria
-- Interfaces Externas
-- Gestão de dados
-- Requisitos Legais e Regulamentares
+**R.F. 03 – Recuperação de Conta:**  
+Permite que o usuário recupere o acesso à conta caso esqueça sua senha.
 
-**5.3 Diretrizes para a elaboração de requisitos funcionais**
+Dados necessários: e-mail.  
+Usuários: todos os usuários.
 
-Cada requisito funcional precisa ser:
+---
 
-- **Específico** sobre o que o sistema deve fazer.
-- **Mensurável** para que você possa dizer se o sistema está fazendo isso
-- **Alcançável** dentro do prazo que você definiu
-- **Relevante** para seus objetivos de negócios
-- **Limitado** no tempo para que você possa
-  acompanhar o progresso
+**R.F. 04 – Envio de Código de Recuperação:**  
+Envia um código de verificação para o e-mail informado durante o processo de recuperação de senha.
 
-**5.4 Estrutura do requisito funcional**
+Dados necessários: e-mail, código de recuperação, tempo de validade.  
+Usuários: sistema.
 
-Um requisito funcional deve ser estruturado da seguinte forma:
+---
 
-- **Nome do requisito funcional:** descrição do
-  requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+**R.F. 05 – Validação de Código de Recuperação:**  
+Verifica se o código de recuperação informado pelo usuário é válido.
 
-**5.4.1 Nome do requisito funcional**
+Dados necessários: código de recuperação, tempo de validade.  
+Usuários: sistema.
 
-**R.F. 99 - Nome do requisito funcional:** é o nome da função que o software terá. Sugerimos, por padronização, que tenha o prefixo R.F. (requisito funcional)
-seguida da numeração, para melhor identificação do requisito, acrescido do formato _“Substantivo + onde será feita a ação”_.
-Por exemplo:
+---
 
-- R.F. 01 - Registro de Funcionários
-- R.F. 15 - Gerenciamento de consultas
-- R.F. 04 - Débito em conta corrente
+**R.F. 06 – Indicação de Resultado da Recuperação:**  
+Exibe ao usuário o resultado do processo de recuperação de senha.
 
-Deixe para definir as numerações ao final, tendo em vista que mudanças podem acontecer e não é prático sempre ficar reajustando os números.
+Dados necessários: status da recuperação.  
+Usuários: todos os usuários.
 
-**5.4.2 Descrição do requisito funcional**
+---
 
-**Descrição do requisito:** local para descrever a função deste requisito.
+**R.F. 07 – Cadastro de Pontos de Alagamento:**  
+Permite que administradores registrem pontos de alagamento monitorados no sistema.
 
-Sempre se preocupe em esclarecer dois pontos: o que o requisito faz e o motivo de sua existência. Isso é especialmente importante se a ação executada nesse requisito não for algo que já acontece naturalmente na empresa.
-Um exemplo é um Registro de funcionários, que talvez não exista hoje mas para o software é necessário para viabilizar uma autenticação de
-usuários. Outro exemplo é algo que faz sentido apenas para um software, como a própria autenticação.
+Dados necessários: latitude, longitude, cidade, bairro, índice de chuva, umidade do ar, probabilidade, duração do evento, pressão atmosférica, vazão do rio.  
+Usuários: administradores.
 
-**5.4.3 Dados necessários**
+---
 
-**Dados necessários:** aqui devem ser colocados os nomes dos dados que serão usados para que esse requisito atenda o que precisa fazer.
+**R.F. 08 – Cadastro de Ocorrências:**  
+Permite registrar ocorrências relacionadas a eventos de risco ou alagamento.
 
-Nas **entradas** e **processos**, em geral, são os dados que serão salvos (seja algo digitado pelo usuário ou captado do sistema, como a hora atual).
+Dados necessários: situação, tipo, cidade, bairro.  
+Usuários: administradores.
 
-Já nas **saídas**, são os dados que serão exibidos em tela (sejam eles vindos diretamente do banco, ou criados por um cálculo ou busca na sessão do usuário).
+---
 
-**5.4.4 Usuários**
+**R.F. 09 – Cadastro de Câmeras de Monitoramento:**  
+Permite registrar câmeras públicas utilizadas para monitoramento das ruas.
 
-**Usuários:** aqui devem ser colocados os nomes dos usuários que terão acesso a esse requisito, conforme enumerados na descrição do sistema.
+Dados necessários: nome da câmera, latitude, longitude, bairro ou região, status.  
+Usuários: administradores.
 
-**5.4.5 Exemplo de requisito funcional**
+---
 
-- **R.F. 01 - Autenticação de usuário:** tem como propósito autenticar o acesso ao sistema, verificando se o usuário pode acessá-lo e, caso possa, o direcionando
-  para a página principal de seu perfil de acesso.
-  - **Dados necessários:** login, senha, nível de permissão.
-  - **Usuários:** todos os níveis de usuário.
+**R.F. 10 – Configuração de Notificações:**  
+Permite que administradores configurem alertas de risco para regiões específicas.
 
-**5.4.6 Organização dos requisitos funcionais**
+Dados necessários: situação, cidade, bairro, descrição.  
+Usuários: administradores.
 
-As funcionalidades devem ser organizadas em: entradas, processos e saídas.
+---
 
-**Entradas:** São as funcionalidades que alimentarão o software com as informações essenciais para seu uso.
+**R.F. 11 – Cadastro de Dados Climáticos:**  
+Permite registrar dados ambientais coletados para análise de risco.
 
-**Exemplos de entradas:**
+Dados necessários: precipitação, umidade do ar, pressão atmosférica, vazão do rio.  
+Usuários: sistema / administradores.
 
-- “**Registro de usuário**” (para permitir depois seu acesso ao software).
-- “**Registro de paciente**” (que seria útil caso nosso software fosse ppara uma clínica, evitando registrar várias vezes os mesmos dados da pessoa a cada consulta e viabilizando um histórico de seus
-  atendimentos).
+---
 
-**Processos:** Em geral, englobam toda ação que executa cálculos, processamentos de tomada de decisão ou transforma dados em novos dados.
+## Processos
 
-**Exemplos de processos:**
+**R.F. 12 – Processamento de Dados Climáticos:**  
+Analisa dados ambientais e históricos para estimar riscos de alagamento.
 
-- “**Autenticação de usuário**”, que usará os dados de “**Registro de usuário**” em sua execução.
-- “**Agendamento de consulta**”, que usará dados do “**Registro de paciente**” e talvez do “**Registro de funcionário**” em sua execução.
+Dados necessários: dados climáticos, histórico de alagamentos, altitude.  
+Usuários: sistema.
 
-**Saídas:** São os relatórios, gráficos, impressões, etc., que utilizarem os dados do software para gerar informações pertinentes ao
-negócio, mas sem intenção de alterá-los, apenas permitindo sua visualização e filtragem.
+---
 
-**Exemplos de saídas:**
+**R.F. 13 – Cálculo de Probabilidade de Alagamento:**  
+Calcula a probabilidade de ocorrência de alagamentos utilizando modelos de aprendizado de máquina.
 
-- “Relatório de consultas por paciente”.
-- Relatório de vendas”.
-- “Log de usuários autenticados”.
+Dados necessários: dados climatológicos, dados topográficos, histórico de eventos.  
+Usuários: sistema.
 
-Todos esses podem ser consideradas saídas, pois usam informações de entradas e processos de modo a mostrar informações relevantes ao
-negócio. Lembre-se que, diferentemente das entradas e processos, aqui os dados necessários devem ser os que a tela exibirá.
+---
 
-**5.4.7 Exemplo de organização dos requisitos funcionais**
+**R.F. 14 – Classificação de Nível de Criticidade:**  
+Classifica o risco conforme níveis de criticidade definidos.
 
-(_A seguir, um exemplo de organização de requisitos funcionais, com entradas, processos e saídas._)
+Dados necessários: índice de risco, parâmetros de classificação.  
+Usuários: administradores.
 
-**Entradas:**
+---
 
-- **R.F. 01 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+**R.F. 15 – Confirmação de Alteração de Criticidade:**  
+Solicita confirmação antes da alteração de nível de criticidade.
 
-- **R.F. 02 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+Dados necessários: nível atual, novo nível selecionado.  
+Usuários: administradores.
 
-**Processamento:**
+---
 
-- **R.F. 03 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+**R.F. 16 – Envio de Notificações:**  
+Envia alertas aos usuários quando há alteração significativa no nível de risco.
 
-- **R.F. 04 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+Dados necessários: nível de risco, região, mensagem de alerta.  
+Usuários: sistema e administradores.
 
-**Saídas:**
+---
 
-- **R.F. 05 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+**R.F. 17 – Filtragem de Registros Históricos:**  
+Permite aplicar filtros para análise de dados históricos.
 
-- **R.F. 06 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+Dados necessários: categoria, tipo, bairro, data, situação.  
+Usuários: administradores.
+
+---
+
+**R.F. 18 – Processamento de Doações:**  
+Processa contribuições financeiras realizadas pelos usuários.
+
+Dados necessários: valor da doação, forma de pagamento, dados do cartão ou Pix.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 19 – Gerenciamento de Cartões:**  
+Permite armazenar e validar dados de cartões utilizados em doações.
+
+Dados necessários: nome do titular, número do cartão, validade, CPF, CVV.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 20 – Confirmação de Pagamento:**  
+Apresenta tela de confirmação antes da finalização da doação.
+
+Dados necessários: valor, forma de pagamento, dados do cartão mascarados.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 21 – Geração de QR Code Pix:**  
+Gera código e QR Code para pagamento via Pix.
+
+Dados necessários: valor, código Pix, tempo de validade.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 22 – Gerenciamento de Perfil:**  
+Permite que o usuário visualize e edite seus dados pessoais.
+
+Dados necessários: nome, e-mail, data de nascimento, senha, foto de perfil.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 23 – Exclusão de Conta:**  
+Permite que o usuário exclua sua conta permanentemente.
+
+Dados necessários: confirmação de exclusão.  
+Usuários: usuários autenticados.
+
+---
+
+## Saídas
+
+**R.F. 24 – Visualização do Mapa Interativo:**  
+Exibe mapa contendo pontos de alagamento monitorados.
+
+Dados necessários: latitude, longitude, bairro, probabilidade, duração do evento.  
+Usuários: todos os usuários.
+
+---
+
+**R.F. 25 – Visualização de Gráficos Climáticos:**  
+Apresenta gráficos com indicadores ambientais.
+
+Dados necessários: precipitação, vazão do rio, umidade do ar, pressão atmosférica.  
+Usuários: administradores.
+
+---
+
+**R.F. 26 – Visualização de Previsões Climáticas:**  
+Permite visualizar previsões para diferentes intervalos de tempo.
+
+Dados necessários: intervalo de previsão, dados climáticos.  
+Usuários: administradores.
+
+---
+
+**R.F. 27 – Visualização de Dashboard:**  
+Exibe indicadores gerais de monitoramento em tempo real.
+
+Dados necessários: indicadores climáticos, níveis de risco, alertas ativos.  
+Usuários: administradores.
+
+---
+
+**R.F. 28 – Visualização de Histórico:**  
+Permite consultar registros históricos de eventos monitorados.
+
+Dados necessários: data, categoria, bairro, tipo de evento.  
+Usuários: administradores.
+
+---
+
+**R.F. 29 – Visualização de Lista de Pontos:**  
+Exibe lista de pontos monitorados com resumo das informações.
+
+Dados necessários: bairro, probabilidade, duração do evento.  
+Usuários: administradores.
+
+---
+
+**R.F. 30 – Visualização de Probabilidade de Alagamento:**  
+Apresenta em tempo real o nível de risco em determinada região.
+
+Dados necessários: região, índice de risco, nível de criticidade.  
+Usuários: todos os usuários.
+
+---
+
+**R.F. 31 – Visualização de Câmeras:**  
+Permite visualizar imagens de câmeras públicas em tempo real.
+
+Dados necessários: identificação da câmera, localização, imagem.  
+Usuários: todos os usuários.
+
+---
+
+**R.F. 32 – Visualização de Informações das Câmeras:**  
+Apresenta dados básicos de cada câmera monitorada.
+
+Dados necessários: nome da câmera, bairro, região.  
+Usuários: todos os usuários.
+
+---
+
+**R.F. 33 – Visualização de Blog:**  
+Exibe publicações informativas sobre enchentes.
+
+Dados necessários: título, imagem, resumo.  
+Usuários: todos os usuários.
+
+---
+
+**R.F. 34 – Exibição de Publicações Populares:**  
+Apresenta as publicações mais acessadas no blog.
+
+Dados necessários: número de acessos, título da publicação.  
+Usuários: todos os usuários.
+
+---
+
+**R.F. 35 – Visualização da Página Sobre Nós:**  
+Exibe informações institucionais sobre a equipe e objetivos do projeto.
+
+Dados necessários: texto institucional, integrantes da equipe.  
+Usuários: todos os usuários.
+
+---
+
+**R.F. 36 – Exibição de Ícones de Nível de Risco:**  
+Apresenta cores e ícones no mapa para representar níveis de criticidade.
+
+Dados necessários: nível de risco, cores, ícones.  
+Usuários: todos os usuários.
+
+---
+
+**R.F. 37 – Busca de Regiões no Mapa:**  
+Permite pesquisar regiões ou pontos monitorados.
+
+Dados necessários: nome da região ou bairro.  
+Usuários: todos os usuários.
+
+---
+
+**R.F. 38 – Exibição de Perfil do Usuário:**  
+Mostra foto de perfil e nome do usuário autenticado.
+
+Dados necessários: nome, foto de perfil.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 39 – Acesso à Página de Perfil:**  
+Permite acessar a página com dados pessoais do usuário.
+
+Dados necessários: dados do usuário.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 40 – Visualização de Dados da Conta:**  
+Exibe informações completas da conta do usuário.
+
+Dados necessários: nome, e-mail, data de nascimento, data de criação da conta.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 41 – Acesso ao Dashboard:**  
+Permite acessar a área principal de monitoramento do sistema.
+
+Dados necessários: dados de monitoramento.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 42 – Acesso à Página de Segurança:**  
+Permite acessar área de gerenciamento da conta.
+
+Dados necessários: dados da conta do usuário.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 43 – Edição de Dados Pessoais:**  
+Permite alterar dados cadastrais do usuário.
+
+Dados necessários: nome, e-mail, data de nascimento.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 44 – Alteração de Senha:**  
+Permite alterar a senha da conta mediante validação da senha atual.
+
+Dados necessários: senha atual, nova senha, confirmação da senha.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 45 – Confirmação de Ações Críticas:**  
+Solicita confirmação antes de ações importantes no sistema.
+
+Dados necessários: ação solicitada, confirmação do usuário.  
+Usuários: usuários autenticados.
+
+---
+
+**R.F. 46 – Exclusão Permanente de Conta:**  
+Permite excluir permanentemente a conta do usuário após confirmação.
+
+Dados necessários: confirmação de exclusão.  
+Usuários: usuários autenticados.
 
 # 6. Requisitos não funcionais
 
