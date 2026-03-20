@@ -549,14 +549,9 @@ Usuários: usuários autenticados.
 
 Os atores identificados no sistema são:
 
-- **Visitante**: pode cadastrar-se, autenticar-se e visualizar informações como o mapa interativo e as câmeras de monitoramento;
+- **Visitante**: pode cadastrar-se, visualizar informações como o mapa interativo e as câmeras de monitoramento;
 - **Usuário autenticado**: possui acesso a funcionalidades adicionais, como gerenciamento de perfil e realização de doações;
-- **Administrador**: responsável por funcionalidades mais avançadas, como registrar ocorrências e cadastrar pontos de alagamento.
+- **Administrador**: responsável por funcionalidades mais avançadas, como registrar ocorrências, gerenciar câmeras e cadastrar pontos de alagamento.
 
-## Relacionamentos
-
-O diagrama apresenta relacionamentos do tipo **<< include >>**, indicando dependência entre casos de uso.
-
-- As funcionalidades **gerenciar perfil** e **fazer doações** incluem o caso de uso **autenticar-se**, ou seja, exigem que o usuário esteja logado no sistema.
 
 
