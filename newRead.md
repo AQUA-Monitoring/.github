@@ -151,7 +151,7 @@ Por fim, **Notification** armazena notificações geradas pelo sistema e **Donat
 
 ## Entradas
 
-**R.F. 01 – Registro de Usuários:**  
+**RF001 – Registro de Usuários:**  
 Permite o cadastro de novos usuários no sistema para possibilitar acesso às funcionalidades da plataforma.
 
 Dados necessários: nome, e-mail, data de nascimento, senha.  
@@ -159,7 +159,7 @@ Usuários: visitantes.
 
 ---
 
-**R.F. 02 – Autenticação de Usuários:**  
+**RF002 – Autenticação de Usuários:**  
 Permite que o usuário acesse o sistema utilizando credenciais válidas ou autenticação via conta Google.
 
 Dados necessários: e-mail, senha, conta Google (OAuth).  
@@ -167,7 +167,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 03 – Recuperação de Conta:**  
+**RF003 – Recuperação de Conta:**  
 Permite que o usuário recupere o acesso à conta caso esqueça sua senha.
 
 Dados necessários: e-mail.  
@@ -175,7 +175,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 04 – Envio de Código de Recuperação:**  
+**RF004 – Envio de Código de Recuperação:**  
 Envia um código de verificação para o e-mail informado durante o processo de recuperação de senha.
 
 Dados necessários: e-mail, código de recuperação, tempo de validade.  
@@ -183,7 +183,7 @@ Usuários: sistema.
 
 ---
 
-**R.F. 05 – Validação de Código de Recuperação:**  
+**RF005 – Validação de Código de Recuperação:**  
 Verifica se o código de recuperação informado pelo usuário é válido.
 
 Dados necessários: código de recuperação, tempo de validade.  
@@ -191,7 +191,7 @@ Usuários: sistema.
 
 ---
 
-**R.F. 06 – Indicação de Resultado da Recuperação:**  
+**RF006 – Indicação de Resultado da Recuperação:**  
 Exibe ao usuário o resultado do processo de recuperação de senha.
 
 Dados necessários: status da recuperação.  
@@ -199,7 +199,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 07 – Cadastro de Pontos de Alagamento:**  
+**RF007 – Cadastro de Pontos de Alagamento:**  
 Permite que administradores registrem pontos de alagamento monitorados no sistema.
 
 Dados necessários: latitude, longitude, cidade, bairro, índice de chuva, umidade do ar, probabilidade, duração do evento, pressão atmosférica, vazão do rio.  
@@ -207,7 +207,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 08 – Cadastro de Ocorrências:**  
+**RF008 – Cadastro de Ocorrências:**  
 Permite registrar ocorrências relacionadas a eventos de risco ou alagamento.
 
 Dados necessários: situação, tipo, cidade, bairro.  
@@ -215,7 +215,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 09 – Cadastro de Câmeras de Monitoramento:**  
+**RF009 – Cadastro de Câmeras de Monitoramento:**  
 Permite registrar câmeras públicas utilizadas para monitoramento das ruas.
 
 Dados necessários: nome da câmera, latitude, longitude, bairro ou região, status.  
@@ -223,7 +223,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 10 – Configuração de Notificações:**  
+**RF010 – Configuração de Notificações:**  
 Permite que administradores configurem alertas de risco para regiões específicas.
 
 Dados necessários: situação, cidade, bairro, descrição.  
@@ -231,7 +231,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 11 – Cadastro de Dados Climáticos:**  
+**RF011 – Cadastro de Dados Climáticos:**  
 Permite registrar dados ambientais coletados para análise de risco.
 
 Dados necessários: precipitação, umidade do ar, pressão atmosférica, vazão do rio.  
@@ -241,7 +241,7 @@ Usuários: sistema / administradores.
 
 ## Processos
 
-**R.F. 12 – Processamento de Dados Climáticos:**  
+**RF012 – Processamento de Dados Climáticos:**  
 Analisa dados ambientais e históricos para estimar riscos de alagamento.
 
 Dados necessários: dados climáticos, histórico de alagamentos, altitude.  
@@ -249,7 +249,7 @@ Usuários: sistema.
 
 ---
 
-**R.F. 13 – Cálculo de Probabilidade de Alagamento:**  
+**RF013 – Cálculo de Probabilidade de Alagamento:**  
 Calcula a probabilidade de ocorrência de alagamentos utilizando modelos de aprendizado de máquina.
 
 Dados necessários: dados climatológicos, dados topográficos, histórico de eventos.  
@@ -257,7 +257,7 @@ Usuários: sistema.
 
 ---
 
-**R.F. 14 – Classificação de Nível de Criticidade:**  
+**RF014 – Classificação de Nível de Criticidade:**  
 Classifica o risco conforme níveis de criticidade definidos.
 
 Dados necessários: índice de risco, parâmetros de classificação.  
@@ -265,7 +265,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 15 – Confirmação de Alteração de Criticidade:**  
+**RF015 – Confirmação de Alteração de Criticidade:**  
 Solicita confirmação antes da alteração de nível de criticidade.
 
 Dados necessários: nível atual, novo nível selecionado.  
@@ -273,7 +273,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 16 – Envio de Notificações:**  
+**RF016 – Envio de Notificações:**  
 Envia alertas aos usuários quando há alteração significativa no nível de risco.
 
 Dados necessários: nível de risco, região, mensagem de alerta.  
@@ -281,7 +281,7 @@ Usuários: sistema e administradores.
 
 ---
 
-**R.F. 17 – Filtragem de Registros Históricos:**  
+**RF017 – Filtragem de Registros Históricos:**  
 Permite aplicar filtros para análise de dados históricos.
 
 Dados necessários: categoria, tipo, bairro, data, situação.  
@@ -289,7 +289,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 18 – Processamento de Doações:**  
+**RF018 – Processamento de Doações:**  
 Processa contribuições financeiras realizadas pelos usuários.
 
 Dados necessários: valor da doação, forma de pagamento, dados do cartão ou Pix.  
@@ -297,7 +297,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 19 – Gerenciamento de Cartões:**  
+**RF019 – Gerenciamento de Cartões:**  
 Permite armazenar e validar dados de cartões utilizados em doações.
 
 Dados necessários: nome do titular, número do cartão, validade, CPF, CVV.  
@@ -305,7 +305,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 20 – Confirmação de Pagamento:**  
+**RF020 – Confirmação de Pagamento:**  
 Apresenta tela de confirmação antes da finalização da doação.
 
 Dados necessários: valor, forma de pagamento, dados do cartão mascarados.  
@@ -313,7 +313,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 21 – Geração de QR Code Pix:**  
+**RF021 – Geração de QR Code Pix:**  
 Gera código e QR Code para pagamento via Pix.
 
 Dados necessários: valor, código Pix, tempo de validade.  
@@ -321,7 +321,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 22 – Gerenciamento de Perfil:**  
+**RF022 – Gerenciamento de Perfil:**  
 Permite que o usuário visualize e edite seus dados pessoais.
 
 Dados necessários: nome, e-mail, data de nascimento, senha, foto de perfil.  
@@ -329,7 +329,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 23 – Exclusão de Conta:**  
+**RF023 – Exclusão de Conta:**  
 Permite que o usuário exclua sua conta permanentemente.
 
 Dados necessários: confirmação de exclusão.  
@@ -339,7 +339,7 @@ Usuários: usuários autenticados.
 
 ## Saídas
 
-**R.F. 24 – Visualização do Mapa Interativo:**  
+**RF024 – Visualização do Mapa Interativo:**  
 Exibe mapa contendo pontos de alagamento monitorados.
 
 Dados necessários: latitude, longitude, bairro, probabilidade, duração do evento.  
@@ -347,7 +347,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 25 – Visualização de Gráficos Climáticos:**  
+**RF025 – Visualização de Gráficos Climáticos:**  
 Apresenta gráficos com indicadores ambientais.
 
 Dados necessários: precipitação, vazão do rio, umidade do ar, pressão atmosférica.  
@@ -355,7 +355,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 26 – Visualização de Previsões Climáticas:**  
+**RF026 – Visualização de Previsões Climáticas:**  
 Permite visualizar previsões para diferentes intervalos de tempo.
 
 Dados necessários: intervalo de previsão, dados climáticos.  
@@ -363,7 +363,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 27 – Visualização de Dashboard:**  
+**RF027 – Visualização de Dashboard:**  
 Exibe indicadores gerais de monitoramento em tempo real.
 
 Dados necessários: indicadores climáticos, níveis de risco, alertas ativos.  
@@ -371,7 +371,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 28 – Visualização de Histórico:**  
+**RF028 – Visualização de Histórico:**  
 Permite consultar registros históricos de eventos monitorados.
 
 Dados necessários: data, categoria, bairro, tipo de evento.  
@@ -379,7 +379,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 29 – Visualização de Lista de Pontos:**  
+**RF029 – Visualização de Lista de Pontos:**  
 Exibe lista de pontos monitorados com resumo das informações.
 
 Dados necessários: bairro, probabilidade, duração do evento.  
@@ -387,7 +387,7 @@ Usuários: administradores.
 
 ---
 
-**R.F. 30 – Visualização de Probabilidade de Alagamento:**  
+**RF030 – Visualização de Probabilidade de Alagamento:**  
 Apresenta em tempo real o nível de risco em determinada região.
 
 Dados necessários: região, índice de risco, nível de criticidade.  
@@ -395,7 +395,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 31 – Visualização de Câmeras:**  
+**RF031 – Visualização de Câmeras:**  
 Permite visualizar imagens de câmeras públicas em tempo real.
 
 Dados necessários: identificação da câmera, localização, imagem.  
@@ -403,7 +403,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 32 – Visualização de Informações das Câmeras:**  
+**RF032 – Visualização de Informações das Câmeras:**  
 Apresenta dados básicos de cada câmera monitorada.
 
 Dados necessários: nome da câmera, bairro, região.  
@@ -411,7 +411,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 33 – Visualização de Blog:**  
+**RF033 – Visualização de Blog:**  
 Exibe publicações informativas sobre enchentes.
 
 Dados necessários: título, imagem, resumo.  
@@ -419,7 +419,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 34 – Exibição de Publicações Populares:**  
+**RF034 – Exibição de Publicações Populares:**  
 Apresenta as publicações mais acessadas no blog.
 
 Dados necessários: número de acessos, título da publicação.  
@@ -427,7 +427,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 35 – Visualização da Página Sobre Nós:**  
+**RF035 – Visualização da Página Sobre Nós:**  
 Exibe informações institucionais sobre a equipe e objetivos do projeto.
 
 Dados necessários: texto institucional, integrantes da equipe.  
@@ -435,7 +435,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 36 – Exibição de Ícones de Nível de Risco:**  
+**RF036 – Exibição de Ícones de Nível de Risco:**  
 Apresenta cores e ícones no mapa para representar níveis de criticidade.
 
 Dados necessários: nível de risco, cores, ícones.  
@@ -443,7 +443,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 37 – Busca de Regiões no Mapa:**  
+**RF037 – Busca de Regiões no Mapa:**  
 Permite pesquisar regiões ou pontos monitorados.
 
 Dados necessários: nome da região ou bairro.  
@@ -451,7 +451,7 @@ Usuários: todos os usuários.
 
 ---
 
-**R.F. 38 – Exibição de Perfil do Usuário:**  
+**RF038 – Exibição de Perfil do Usuário:**  
 Mostra foto de perfil e nome do usuário autenticado.
 
 Dados necessários: nome, foto de perfil.  
@@ -459,7 +459,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 39 – Acesso à Página de Perfil:**  
+**RF039 – Acesso à Página de Perfil:**  
 Permite acessar a página com dados pessoais do usuário.
 
 Dados necessários: dados do usuário.  
@@ -467,7 +467,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 40 – Visualização de Dados da Conta:**  
+**RF040 – Visualização de Dados da Conta:**  
 Exibe informações completas da conta do usuário.
 
 Dados necessários: nome, e-mail, data de nascimento, data de criação da conta.  
@@ -475,7 +475,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 41 – Acesso ao Dashboard:**  
+**RF041 – Acesso ao Dashboard:**  
 Permite acessar a área principal de monitoramento do sistema.
 
 Dados necessários: dados de monitoramento.  
@@ -483,7 +483,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 42 – Acesso à Página de Segurança:**  
+**RF042 – Acesso à Página de Segurança:**  
 Permite acessar área de gerenciamento da conta.
 
 Dados necessários: dados da conta do usuário.  
@@ -491,7 +491,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 43 – Edição de Dados Pessoais:**  
+**RF043 – Edição de Dados Pessoais:**  
 Permite alterar dados cadastrais do usuário.
 
 Dados necessários: nome, e-mail, data de nascimento.  
@@ -499,7 +499,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 44 – Alteração de Senha:**  
+**RF044 – Alteração de Senha:**  
 Permite alterar a senha da conta mediante validação da senha atual.
 
 Dados necessários: senha atual, nova senha, confirmação da senha.  
@@ -507,7 +507,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 45 – Confirmação de Ações Críticas:**  
+**RF045 – Confirmação de Ações Críticas:**  
 Solicita confirmação antes de ações importantes no sistema.
 
 Dados necessários: ação solicitada, confirmação do usuário.  
@@ -515,7 +515,7 @@ Usuários: usuários autenticados.
 
 ---
 
-**R.F. 46 – Exclusão Permanente de Conta:**  
+**RF046 – Exclusão Permanente de Conta:**  
 Permite excluir permanentemente a conta do usuário após confirmação.
 
 Dados necessários: confirmação de exclusão.  
@@ -533,214 +533,30 @@ Usuários: usuários autenticados.
 
 **RNF005** – O sistema deve realizar backups automáticos semanais do banco de dados.
 
-**RNF006** – O sistema deve ser responsivo e se adaptar automaticamente a diferentes resoluções de tela (desktop, tablet e mobile).  
-Responsável: Nicole (Vue)
+**RNF006** – O sistema deve ser responsivo e se adaptar automaticamente a diferentes resoluções de tela (desktop, tablet e mobile).
 
-**RNF007** – O sistema deve disponibilizar interface intuitiva, priorizando navegação simplificada e conteúdo objetivo.  
-Responsáveis: Rafael, Bianca e Nicole (Figma e Vue)
+**RNF007** – O sistema deve disponibilizar interface intuitiva, priorizando navegação simplificada e conteúdo objetivo.
 
-**RNF008** – O sistema deve ser desenvolvido utilizando Clean Architecture e Domain Driven Design, permitindo fácil manutenção e expansão.  
-Responsáveis: Vitor, Matheus e Nicole (Vue e Django)
+**RNF008** – O sistema deve ser desenvolvido utilizando Clean Architecture e Domain Driven Design, permitindo fácil manutenção e expansão.
 
 **RNF009** – O sistema deve manter logs de erros e acessos, permitindo auditoria e monitoramento.
 
 # 7. Diagrama de Caso de Uso
 
-**7.1 Introdução**
+![Diagrama de Caso de Uso do Sistema AQUA](images/DiagramaAQUA.drawio.png)
 
-O diagrama de caso de uso é uma ferramenta de modelagem que descreve o comportamento de um sistema a partir da perspectiva do usuário. Ele é usado para capturar os requisitos funcionais de um sistema.
+## Atores
 
-- Especificam a visão externa do sistema.
-- Descrevem como o sistema é percebido por seus usuários.
-- Descrevem as interações entre os usuários e o sistema.
+Os atores identificados no sistema são:
 
-![Diagrama de Caso de Uso](img/dcu1.png "Diagrama de Caso de Uso")
+- **Visitante**: pode cadastrar-se, autenticar-se e visualizar informações como o mapa interativo e as câmeras de monitoramento;
+- **Usuário autenticado**: possui acesso a funcionalidades adicionais, como gerenciamento de perfil e realização de doações;
+- **Administrador**: responsável por funcionalidades mais avançadas, como registrar ocorrências e cadastrar pontos de alagamento.
 
-**Os casos de uso:**
+## Relacionamentos
 
-- Descrevem como os **usuários interagem com o sistema** (as funcionalidades do sistema)
-- Facilitam a **organização dos requisitos** de um sistema.
-- Dão uma **visão externa** do sistema
-- O conjunto de casos de uso deve ser capaz de comunicar a **funcionalidade** e o **comportamento** do sistema para o cliente.
-- Descrevem **o que** o sistema faz, mas **não** especificam **como** isso deve ser feito.
+O diagrama apresenta relacionamentos do tipo **<< include >>**, indicando dependência entre casos de uso.
 
-**7.2 Elementos do diagrama de caso de uso**
+- As funcionalidades **gerenciar perfil** e **fazer doações** incluem o caso de uso **autenticar-se**, ou seja, exigem que o usuário esteja logado no sistema.
 
-7.2.1 **Atores**
 
-- Representam os papéis desempenhados por **elementos externos** ao sistema
-  - Ex: humano (usuário), dispositivo de hardware ou outro sistema (cliente)
-- Elementos que **interagem** com o sistema
-
-Notação:
-
-![Atores Notação](img/dcu_atores_notacao.png "Atores Notação")
-
-**Exemplo: Loja de CDs**
-
-**Identificando os atores**
-
-- Uma loja de CDs possui discos para venda. Um cliente pode comprar uma quantidade ilimitada de discos para isto ele deve se dirigir à loja.
-- A loja possui um **atendente** cuja função é atender os clientes durante a venda dos discos. A loja também possui um **gerente** cuja função é administrar o estoque para que não faltem discos. Além disso é ele quem dá folga ao atendente, ou seja, ele também atende os clientes durante a venda dos discos.
-
-![Identificando os atores](img/dcu_identificando_atores.png "Identificando os atores")
-
-**E o cliente?**
-
-- Não é ator pois ele **não interage** com o sistema!
-
-**7.2.2 Casos de uso**
-
-- Representam **funcionalidades** do sistema (requisitos funcionais).
-- São iniciados por **atores** ou por outros casos de uso.
-
-> **Dica**: nomeie os casos de uso com **verbos** no **infinitivo**.
-
-Notação:
-
-![Casos de uso Notação](img/dcu_casos_de_uso_notacao.png "Casos de uso Notação")
-
-**Exemplo: Loja de CDs**
-
-**Identificando os casos de uso**
-
-- Uma loja de CDs possui discos para venda. Um cliente pode comprar uma quantidade ilimitada de discos para isto ele deve se dirigir à loja. A loja possui um atendente cuja função é atender os clientes durante a **venda dos discos**.
-- A loja também possui um gerente cuja função é **administrar o estoque** para que não faltem discos. Além disso é ele quem dá folga ao atendente, ou seja, ele também atende os clientes durante a **venda dos discos**.
-
-![Identificando os casos de uso](img/dcu_identificando_casos_de_uso.png "Identificando os casos de uso")
-
-**7.2.3 Relacionamentos**
-
-**7.2.3.1 Relacionamento de associação**
-
-- Indica que um ator **participa** de um caso de uso, ou seja, o ator **interage** (comunica-se) com o caso de uso.
-- É representado por uma **linha sólida**.
-- Um ator pode se relacionar com **um ou mais casos de uso**.
-
-> Dicas:
->
-> - Não use setas nas linhas de associação.
-> - Associações não representam fluxo de informação.
-
-![Relacionamento de associação](img/dcu_relacionamento_de_associacao.png "Relacionamento de associação")
-
-**Exemplo: Loja de CDs**
-
-**Identificando os relacionamentos de associação**
-
-- Uma loja de CDs possui discos para venda. Um cliente pode comprar uma quantidade ilimitada de discos para isto ele deve se dirigir à loja. A loja possui um _atendente_ cuja função é atender os clientes durante a **venda dos discos**.
-- A loja também possui um _gerente_ cuja função é **administrar o estoque** para que não faltem discos. Além disso é ele quem dá folga ao _atendente_, ou seja, ele também atende os clientes durante a **venda dos discos**.
-
-![Identificando os relacionamentos de associação](img/dcu_identificando_relacionamentos_de_associacao.png "Identificando os relacionamentos de associação")
-
-**7.2.3.2 Relacionamento de generalização/especialização**
-
-**Generalização de atores**
-
-- Quando dois ou mais atores podem se **comunicar com o mesmo conjunto de casos de uso**.
-- Indica que um ator **herda** as características de outro ator.
-  – Um filho (herdeiro) pode se comunicar com todos os casos de uso que seu pai se comunica.
-
-> **Dica:** coloque os herdeiros **embaixo**.
-
-**Notação:**
-
-![Relacionamento de generalização/especialização de atores - notação](img/dcu_relacionamento_de_generalizacao_especializacao_notacao_de_atores.png "Relacionamento de generalização/especialização de atores - notação")
-
-**Exemplo: Loja de CDs**
-
-**Identificando os relacionamentos de generalização/especialização de atores**
-
-![Identificando os relacionamentos de generalização/especialização de atores](img/dcu_identificando_relacionamentos_de_generalizacao_especializacao_de_atores.png "Identificando os relacionamentos de generalização/especialização de atores")
-
-**Generalização de casos de uso**
-
-– O caso de uso filho herda o comportamento e o significado do caso de uso pai.
-– O caso de uso filho pode incluir ou sobrescrever o comportamento do caso de uso pai.
-– O caso de uso filho pode substituir o caso de uso pai em qualquer lugar que ele apareça.
-
-> **Dica:** deve ser aplicada quando uma condição resulta na definição de
-> diversos fluxos alternativos.
-
-Notação:
-
-![Relacionamento de generalização/especialização de casos de uso - notação](img/dcu_relacionamento_de_generalizacao_especializacao_notacao_de_casos_de_uso.png "Relacionamento de generalização/especialização de casos de uso - notação")
-
-**Exemplo: Loja de CDs**
-
-**Identificando os relacionamentos de generalização/especialização de casos de uso**
-
-**Novos requisitos:**
-
-- As vendas podem ser **à vista** ou **a prazo**. Em ambos os casos o estoque é
-  atualizado e uma nota fiscal, entregue ao consumidor.
-- No caso de uma **venda à vista**, clientes cadastrados na loja e que compram mais de 5 CDs de uma só vez ganham um desconto de 1% para cada ano de cadastro.
-- No caso de uma **venda a prazo**, ela pode ser parcelada em 2 pagamentos com um
-  acréscimo de 20%. As vendas a prazo podem ser pagas no **cartão** ou no **boleto**.
-  - Para pagamento com **boleto**, são gerados boletos bancários que são entregues ao cliente e armazenados no sistema para lançamento posterior no caixa.
-  - Para pagamento com **cartão**, os clientes com mais de 10 anos de cadastro na loja ganham o mesmo desconto das compras à vista.
-
-![Identificando os relacionamentos de generalização/especialização de casos de uso](img/dcu_identificando_relacionamentos_de_generalizacao_especializacao_de_casos_de_uso.png "Identificando os relacionamentos de generalização/especialização de casos de uso")
-
-**Identificando mais relacionamentos de generalização/especialização de casos de uso**
-
-![Identificando mais relacionamentos de generalização/especialização de casos de uso](img/dcu_identificando_mais_relacionamentos_de_generalizacao_especializacao_de_casos_de_uso.png "Identificando mais relacionamentos de generalização/especialização de casos de uso")
-
-**7.2.3.3 Relacionamento de dependência**
-
-**Extensão**
-
-- Representa uma variação/extensão do comportamento do caso de uso base.
-- O caso de uso estendido só é executado sob certas circunstâncias.
-- Separa partes obrigatórias de partes opcionais.
-  - Partes obrigatórias: caso de uso base.
-  - Partes opcionais: caso de uso estendido.
-- Fatorar comportamentos variantes do sistema (podendo reusar este comportamento
-  em outros casos de uso).
-
-**Notação:**
-
-![Relacionamento de dependência (extensão) - notação](img/dcu_relacionamento_de_dependencia_extensao_notacao.png "Relacionamento de dependência (extensão) - notação")
-
-**Exemplo: Loja de CDs**
-
-**Identificando os relacionamentos de dependência (extensão)**
-
-**Novos requisitos:**
-
-- No caso de uma venda à vista, clientes cadastrados na loja e que compram mais
-  de 5 CDs de uma só vez ganham um **desconto** de 1% para cada ano de cadastro.
-- No caso de uma venda a prazo...
-  - ...Para pagamento com cartão, os clientes com mais de 10 anos de cadastro na loja ganham o mesmo **desconto** das compras à vista.
-
-![Identificando os relacionamentos de dependência (extensão)](img/dcu_identificando_relacionamentos_de_dependencia_extensao.png "Identificando os relacionamentos de dependência (extensão)")
-
-**Inclusão**
-
-- Evita repetição ao fatorar uma atividade
-  comum a dois ou mais casos de uso.
-- Um caso de uso pode incluir vários casos de uso.
-
-**Notação:**
-
-![Relacionamento de dependência (inclusão) - notação](img/dcu_relacionamento_de_dependencia_inclusao_notacao.png "Relacionamento de dependência (inclusão) - notação")
-
-**Exemplo: Loja de CDs**
-
-**Novos requisitos:**
-Para efetuar vendas ou administrar estoque, atendentes e gerentes terão que **validar** suas respectivas senhas de
-acesso ao sistema.
-
-![Identificando os relacionamentos de dependência (inclusão)](img/dcu_identificando_relacionamentos_de_dependencia_inclusao.png "Identificando os relacionamentos de dependência (inclusão)")
-
-**7.2.4 Fronteira do sistema**
-
-- Elemento opcional (mas essencial para um bom
-  entendimento).
-- Serve para definir a área de atuação do sistema, ou seja, seus limites.
-
-**Identificando a fronteira do sistema**
-
-![Identificando a fronteira do sistema](img/dcu_identificando_a_fronteira_do_sistema.png "Identificando a fronteira do sistema")
-
----
