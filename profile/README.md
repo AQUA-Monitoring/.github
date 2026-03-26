@@ -76,7 +76,7 @@ O segundo é o **administrador**, responsável por gerenciar as informações do
 
 Com o **AQUA**, as informações sobre possíveis alagamentos ficam **centralizadas e mais fáceis de visualizar**, ajudando órgãos como a Defesa Civil no monitoramento das áreas de risco e permitindo que a população tenha acesso a informações importantes sobre a situação das regiões monitoradas.
 
-# 5. Diagrama de Caso de Uso
+# 4. Diagrama de Caso de Uso
 
 ![Diagrama de Caso de Uso do Sistema AQUA](/src/images/DiagramaAQUA.drawio.png)
 
@@ -88,7 +88,7 @@ Os atores identificados no sistema são:
 - **Usuário autenticado**: possui acesso a funcionalidades adicionais, como gerenciamento de perfil e realização de doações;
 - **Administrador**: responsável por funcionalidades mais avançadas, como registrar ocorrências, gerenciar câmeras e cadastrar pontos de alagamento.
 
-# 6. Requisitos funcionais
+# 5. Requisitos funcionais
 
 ## Entradas
 
@@ -417,7 +417,7 @@ Permite excluir permanentemente a conta do usuário após confirmação.
 Dados necessários: confirmação de exclusão.  
 Usuários: usuários autenticados.
 
-# 7. Requisitos não funcionais
+# 6. Requisitos não funcionais
 
 **RNF001** – O sistema deve armazenar senhas de forma criptografada, utilizando algoritmo seguro (ex.: bcrypt ou Argon2).
 
@@ -439,7 +439,7 @@ Usuários: usuários autenticados.
 
 ---
 
-# 8. Regras de negócio
+# 7. Regras de negócio
 
 **RN01** – O sistema deve permitir o cadastro de usuários com nome, e-mail, data de nascimento e senha.
 
