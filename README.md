@@ -1,163 +1,554 @@
-# The Infinity Gauntlet
+# Projeto Integrador - Modelo
 
-## 📌 Padrões de Commit
-
-Os commits devem ser escritos **em inglês** no seguinte formato:  
-`<tipo>: <mensagem do commit> #número-da-issue`
-
-**Exemplo:**  
-`feat: create sidebar component #01`
-
-Siga a especificação [Conventional Commits](https://www.conventionalcommits.org/) para garantir consistência e compatibilidade com ferramentas de automação.
+_AQUA: Monitoramento de câmeras públicas e dados hidrometeorológicos no apoio à gestão de alagamentos urbanos. 🌧️_
 
 ---
 
-### Tipos de Commit
+## 1. Contexto e Problema
 
-- **`feat`**  
-  Adiciona uma **nova funcionalidade** ao código.  
-  _(Relacionado ao **MINOR** do versionamento semântico)._
-
-- **`fix`**  
-  Corrige um **bug**.  
-  _(Relacionado ao **PATCH** do versionamento semântico)._
-
-- **`docs`**  
-  Mudanças apenas na **documentação** (ex: README).  
-  _(Sem alterações no código de produção)._
-
-- **`test`**  
-  Adiciona ou modifica **testes unitários**.  
-  _(Sem alterações no código de produção)._
-
-- **`build`**  
-  Mudanças relacionadas ao **sistema de build ou dependências**.
-
-- **`perf`**  
-  Alterações de código que **melhoram a performance**.
-
-- **`style`**  
-  Mudanças de **formatação** (espaços, ponto e vírgula, etc).  
-  _(Sem alterações funcionais)._
-
-- **`refactor`**  
-  **Refatoração** de código que não corrige bug nem adiciona funcionalidade.
-
-- **`chore`**  
-  **Tarefas de manutenção** (ex: atualizar .gitignore, ajustes em ferramentas).
-
-- **`ci`**  
-  Mudanças na **configuração de integração contínua**.
-
-- **`raw`**  
-  Mudanças em **configurações, dados, features ou parâmetros**.
-
-- **`cleanup`**  
-  Remoção de **código comentado ou desnecessário**.
-
-- **`remove`**  
-  Exclusão de **arquivos, diretórios ou funcionalidades obsoletas**.
+Joinville enfrenta recorrentes **alagamentos e enchentes**, resultado de sua **posição geográfica entre morros e bacias hidrográficas**, além de fatores urbanos que **dificultam o escoamento das águas pluviais**.  
+Nos últimos anos, **eventos hidrológicos extremos** têm se tornado mais frequentes — especialmente no verão — trazendo **desafios à gestão urbana**, à **tomada de decisões preventivas** e à **mitigação de riscos**.
 
 ---
 
-## 🧾 Utilização de Issues
+## 💡 2. Proposta da Solução
 
-### Título da Issue
-
-O título deve seguir o padrão do commit final gerado pela conclusão da Issue.
-
-Os titulos devem ser escritos **em inglês** no seguinte formato:  
-`<Classificação>:<título da Issue>`
-
-**Exemplo:** FEAT: Create sidebar component
-
-**Resumo:** Apresente brevemente o objetivo daquela tarefa.
+A proposta consiste no **desenvolvimento de uma aplicação web** voltada ao **monitoramento em tempo real de alagamentos**.  
+A solução integra **câmeras públicas localizadas em pontos estratégicos**, aplicando **visão computacional**, **aprendizado de máquina** e **reconhecimento de padrões** para **comparar imagens em tempo real com registros históricos**, identificando **áreas afetadas com maior precisão**.
 
 ---
 
-### **Descrição**
+Professor: [Marco André Mendes](github.com/marcoandre)
 
-Descreva o que precisa ser feito ou corrigido, em detalhes de maneira clara.
+Equipe:
 
-- A descrição deve ser feita em **inglês**.
+- [Bianca Isadora Joselli de Souza](https://github.com/BiancaJoselli)
+- [Helena Soares Pereira](https://github.com/helenasoaresp)
+- [Matheus Miguel Michalski](https://github.com/matheusmichalski)
+- [Nicole Ferreira Melo](https://github.com/nicolefemello)
+- [Rafael August Otto](https://github.com/rafael-otto)
+- [Vitor André da Silva](https://github.com/VitorAndreSilva)
 
----
+Links do projeto:
 
-#### Informações Adicionais
+- Backend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_backend) e [Publicação](http://api.aqua.michalski.app/)
+- Frontend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_frontend) e [Publicação](http://aqua.michalski.app/)
 
-- **Assignees** (_responsável pela realização da Issue_)
-- **Label** (_legenda relacionada ao responsável da Issue_): `FRONTEND` |
-  `SVG` |
-  `BACKEND` |
-  `DESIGN` |
-  `DOCS` |
+# 1. Desenvolvimentoapi.aqua.michalski.app
 
-- **Priority** (_prioridade para a realização da Issue_):
-  `HIGH` | `MEDIUM` |`LOW`
+**Ordem de Serviço (O.S.)**
 
-- **Status** (_Fase de desenvolvimento da Issue_):
-  `Backlog` | `Ready` |`In progress` | `Done`
+**Ocorrência de Alagamentos**
 
----
+Joinville enfrenta recorrentes alagamentos e enchentes devido à sua posição geográfica entre morros e bacias hidrográficas, além de fatores urbanos que dificultam o escoamento das águas da chuva. Diante dessa situação, surgiu a necessidade de uma solução que auxilie no monitoramento dessas ocorrências. 
+Para isso, foi proposto o desenvolvimento do sistema AQUA, uma aplicação web voltada ao acompanhamento de áreas com risco de alagamento. O sistema utilizará câmeras públicas instaladas em pontos estratégicos da cidade e técnicas de visão computacional para analisar imagens em tempo real e compará-las com registros históricos. Dessa forma, será possível identificar áreas afetadas com maior precisão e disponibilizar informações que auxiliem na prevenção de riscos.
 
-## 🚀 Utilização de Pull Requests
+# 2. Situação Problema
 
-### Título do Pull Request
+A empresa fictícia **AQUA Monitoramento Ambiental** desenvolveu um sistema voltado ao acompanhamento de condições climáticas e ao monitoramento de áreas com risco de alagamento em Joinville. O sistema foi criado com o objetivo de auxiliar a Defesa Civil e a população no acompanhamento de situações de risco relacionadas a chuvas intensas, transbordamento de rios e acúmulo de água em vias urbanas.
 
-O título deve seguir o padrão do commit principal realizado durante a implementação.
-
-Os títulos devem ser escritos **em inglês** no seguinte formato:  
-`<Classificação>:<descrição do Pull Request>`
-
-**Resumo:** Apresente uma descrição breve sobre o propósito e impacto do Pull Request.
+O projeto foi idealizado por uma equipe de desenvolvedores interessados em utilizar tecnologia e análise de dados para melhorar a prevenção de desastres naturais nas cidades. O sistema busca reunir informações ambientais e geográficas em uma única plataforma, facilitando o acesso a dados importantes para tomada de decisões em momentos de risco.
 
 ---
 
-### Descrição
+Atualmente, a **Defesa Civil** enfrenta dificuldades relacionadas ao acompanhamento de áreas com risco de alagamento. Grande parte do trabalho realizado por esses órgãos ainda depende de processos manuais e da consulta a diversas fontes de informação separadas.
 
-Detalhe as alterações realizadas de forma clara e objetiva:
+Em muitos casos, os profissionais precisam acessar diferentes plataformas para verificar dados meteorológicos, níveis de chuva, condições de rios e registros históricos de enchentes. Essas informações nem sempre estão centralizadas em um único sistema, o que torna o processo de análise mais demorado e complexo.
 
-- **Funcionalidades implementadas**
-- **Bugs corrigidos**
-- **Melhorias de código**
-- **Refatorações**
+Além disso, o acompanhamento de ocorrências em tempo real pode exigir a consulta de câmeras públicas, registros de chamados da população e dados meteorológicos atualizados. Como essas informações estão distribuídas em diferentes sistemas ou plataformas, os profissionais responsáveis pelo monitoramento precisam reunir manualmente esses dados para compreender a situação de determinada região.
 
-> A descrição deve ser feita em **inglês**.
+Esse cenário pode dificultar a identificação rápida de áreas com maior risco de alagamento, especialmente durante períodos de chuvas intensas. A falta de uma visualização centralizada das informações também pode tornar mais difícil o planejamento de ações preventivas ou emergenciais.
 
----
-
-#### Informações Adicionais
-
-- **Reviewers:** (\_pessoas responsáveis pela revisão das alterações realizas)
-- **Assignees:** (_pessoas responsáveis pelas alterações realizadas_)
-- **Label:** (_categoria relacionada às mudanças realizadas_):
-  - `FRONTEND`
-  - `SVG`
-  - `BACKEND`
-  - `DESIGN`
-  - `DOCS`
+Pensando nesses desafios, surgiu a proposta do sistema **AQUA**, que busca reunir diferentes tipos de informações ambientais em uma única plataforma digital. O sistema permite visualizar dados climáticos, acompanhar regiões monitoradas e identificar áreas com maior probabilidade de alagamento por meio de mapas e indicadores.
 
 ---
 
-## Prática
+Diante desse contexto, percebe-se que a ausência de ferramentas integradas pode tornar o trabalho de monitoramento ambiental mais lento e complexo para órgãos como a Defesa Civil. A necessidade de consultar diversas fontes de informação e reunir dados manualmente pode dificultar a análise rápida das condições climáticas e dos riscos existentes em determinadas regiões.
 
-1. Selecione a aba `Pull requests`em seu repositório:
+Com a utilização do sistema **AQUA**, torna-se possível centralizar informações importantes em uma única plataforma, facilitando a visualização dos dados e o acompanhamento das condições ambientais. Dessa forma, o sistema pode contribuir para melhorar o monitoramento de áreas com risco de alagamento e auxiliar na tomada de decisões em situações de emergência.
 
-![Minha Imagem](<./src/PR(1).png>)
+# 3. Descrição da proposta
 
-1. Após isso, selecione a branch de onde você deseja realizar o pull para a branch que você realizará o push:
+## Proposta de Solução
 
-- No exemplo estamos realizando o pull da branch `add-badges-to-readme` para a branch `main`.
-- Ou seja, comparando os arquivos de `add-badges-to-readme` com os da `main`.
+Diante das dificuldades no monitoramento de áreas com risco de alagamento, propõe-se o desenvolvimento do **AQUA**, um sistema digital que reúne informações em uma única plataforma. O objetivo do software é **auxiliar no acompanhamento de regiões com risco de alagamento**, facilitando o acesso a dados que hoje estão espalhados em diferentes fontes.
 
-![Minha Imagem](<./src/PR(2).png>)
+O sistema permitirá acompanhar situações de risco por meio de **câmeras públicas localizadas em pontos estratégicos da cidade**, possibilitando a visualização de determinadas áreas em tempo real. Essas imagens serão utilizadas para auxiliar na identificação de possíveis alagamentos e no acompanhamento das condições das ruas.
 
-3.  Depois disso, adicione as propriedades desejada em seu Pull Request
+O **AQUA** terá **dois tipos de usuários**. O primeiro é o **usuário público**, que poderá acessar o sistema para visualizar o mapa com os pontos monitorados, consultar regiões com risco de alagamento e acompanhar as imagens das câmeras disponíveis.
 
-- Neste exemplo, foi adicionado propriedade aos campos `Reviwers`, `Assignees`, `Labels` e `Projects`.
+O segundo é o **administrador**, responsável por gerenciar as informações do sistema. Esse usuário poderá **cadastrar pontos de monitoramento, registrar ocorrências e adicionar câmeras utilizadas no acompanhamento das regiões**.
 
-![Minha Imagem](<./src/PR(3).png>)
+Com o **AQUA**, as informações sobre possíveis alagamentos ficam **centralizadas e mais fáceis de visualizar**, ajudando órgãos como a Defesa Civil no monitoramento das áreas de risco e permitindo que a população tenha acesso a informações importantes sobre a situação das regiões monitoradas.
 
-4. Após a aprovação dos usuários predefinidos como `Reviwers`, confirme o `merge` das branchs e o `Pull request estará concluído`.
+# 4. Modelagem de Dados
 
-![Minha Imagem](<./src/PR(4).png>)
+A modelagem de dados do sistema **AQUA** foi definida por meio de um Diagrama Entidade-Relacionamento (DER), que representa as principais entidades do sistema e seus relacionamentos.
+
+A entidade **User** armazena os dados dos usuários da plataforma, enquanto **Address** registra as informações de localização associadas a usuários, organizações e câmeras. A entidade **NGO** representa organizações que podem atuar em ações de apoio à população.
+
+O sistema também possui as entidades **Camera** e **Flood_Point**, responsáveis por registrar as câmeras utilizadas no monitoramento e os pontos de alagamento identificados. As entidades **Neighborhood** e **Region** organizam as informações geográficas da cidade.
+
+Além disso, o sistema registra dados meteorológicos por meio das entidades **Weather** e **Forecast**, que armazenam informações climáticas e previsões do tempo. As entidades **Protocol**, **Response** e **Occurrence** são utilizadas para registrar ocorrências e ações relacionadas a eventos monitorados.
+
+Por fim, **Notification** armazena notificações geradas pelo sistema e **Donation** registra doações realizadas, incluindo o tipo de pagamento armazenado em **Payment_Type**.
+
+# 5. Requisitos funcionais
+
+## Entradas
+
+**RF001 – Registro de Usuários:**  
+Permite o cadastro de novos usuários no sistema para possibilitar acesso às funcionalidades da plataforma.
+
+Dados necessários: nome, e-mail, data de nascimento, senha.  
+Usuários: visitantes.
+
+---
+
+**RF002 – Autenticação de Usuários:**  
+Permite que o usuário acesse o sistema utilizando credenciais válidas ou autenticação via conta Google.
+
+Dados necessários: e-mail, senha, conta Google (OAuth).  
+Usuários: todos os usuários.
+
+---
+
+**RF003 – Recuperação de Conta:**  
+Permite que o usuário recupere o acesso à conta caso esqueça sua senha.
+
+Dados necessários: e-mail.  
+Usuários: todos os usuários.
+
+---
+
+**RF004 – Envio de Código de Recuperação:**  
+Envia um código de verificação para o e-mail informado durante o processo de recuperação de senha.
+
+Dados necessários: e-mail, código de recuperação, tempo de validade.  
+Usuários: sistema.
+
+---
+
+**RF005 – Validação de Código de Recuperação:**  
+Verifica se o código de recuperação informado pelo usuário é válido.
+
+Dados necessários: código de recuperação, tempo de validade.  
+Usuários: sistema.
+
+---
+
+**RF006 – Indicação de Resultado da Recuperação:**  
+Exibe ao usuário o resultado do processo de recuperação de senha.
+
+Dados necessários: status da recuperação.  
+Usuários: todos os usuários.
+
+---
+
+**RF007 – Cadastro de Pontos de Alagamento:**  
+Permite que administradores registrem pontos de alagamento monitorados no sistema.
+
+Dados necessários: latitude, longitude, cidade, bairro, índice de chuva, umidade do ar, probabilidade, duração do evento, pressão atmosférica, vazão do rio.  
+Usuários: administradores.
+
+---
+
+**RF008 – Cadastro de Ocorrências:**  
+Permite registrar ocorrências relacionadas a eventos de risco ou alagamento.
+
+Dados necessários: situação, tipo, cidade, bairro.  
+Usuários: administradores.
+
+---
+
+**RF009 – Cadastro de Câmeras de Monitoramento:**  
+Permite registrar câmeras públicas utilizadas para monitoramento das ruas.
+
+Dados necessários: nome da câmera, latitude, longitude, bairro ou região, status.  
+Usuários: administradores.
+
+---
+
+**RF010 – Configuração de Notificações:**  
+Permite que administradores configurem alertas de risco para regiões específicas.
+
+Dados necessários: situação, cidade, bairro, descrição.  
+Usuários: administradores.
+
+---
+
+**RF011 – Cadastro de Dados Climáticos:**  
+Permite registrar dados ambientais coletados para análise de risco.
+
+Dados necessários: precipitação, umidade do ar, pressão atmosférica, vazão do rio.  
+Usuários: sistema / administradores.
+
+---
+
+## Processos
+
+**RF012 – Processamento de Dados Climáticos:**  
+Analisa dados ambientais e históricos para estimar riscos de alagamento.
+
+Dados necessários: dados climáticos, histórico de alagamentos, altitude.  
+Usuários: sistema.
+
+---
+
+**RF013 – Cálculo de Probabilidade de Alagamento:**  
+Calcula a probabilidade de ocorrência de alagamentos utilizando modelos de aprendizado de máquina.
+
+Dados necessários: dados climatológicos, dados topográficos, histórico de eventos.  
+Usuários: sistema.
+
+---
+
+**RF014 – Classificação de Nível de Criticidade:**  
+Classifica o risco conforme níveis de criticidade definidos.
+
+Dados necessários: índice de risco, parâmetros de classificação.  
+Usuários: administradores.
+
+---
+
+**RF015 – Confirmação de Alteração de Criticidade:**  
+Solicita confirmação antes da alteração de nível de criticidade.
+
+Dados necessários: nível atual, novo nível selecionado.  
+Usuários: administradores.
+
+---
+
+**RF016 – Envio de Notificações:**  
+Envia alertas aos usuários quando há alteração significativa no nível de risco.
+
+Dados necessários: nível de risco, região, mensagem de alerta.  
+Usuários: sistema e administradores.
+
+---
+
+**RF017 – Filtragem de Registros Históricos:**  
+Permite aplicar filtros para análise de dados históricos.
+
+Dados necessários: categoria, tipo, bairro, data, situação.  
+Usuários: administradores.
+
+---
+
+**RF018 – Processamento de Doações:**  
+Processa contribuições financeiras realizadas pelos usuários.
+
+Dados necessários: valor da doação, forma de pagamento, dados do cartão ou Pix.  
+Usuários: usuários autenticados.
+
+---
+
+**RF019 – Gerenciamento de Cartões:**  
+Permite armazenar e validar dados de cartões utilizados em doações.
+
+Dados necessários: nome do titular, número do cartão, validade, CPF, CVV.  
+Usuários: usuários autenticados.
+
+---
+
+**RF020 – Confirmação de Pagamento:**  
+Apresenta tela de confirmação antes da finalização da doação.
+
+Dados necessários: valor, forma de pagamento, dados do cartão mascarados.  
+Usuários: usuários autenticados.
+
+---
+
+**RF021 – Geração de QR Code Pix:**  
+Gera código e QR Code para pagamento via Pix.
+
+Dados necessários: valor, código Pix, tempo de validade.  
+Usuários: usuários autenticados.
+
+---
+
+**RF022 – Gerenciamento de Perfil:**  
+Permite que o usuário visualize e edite seus dados pessoais.
+
+Dados necessários: nome, e-mail, data de nascimento, senha, foto de perfil.  
+Usuários: usuários autenticados.
+
+---
+
+**RF023 – Exclusão de Conta:**  
+Permite que o usuário exclua sua conta permanentemente.
+
+Dados necessários: confirmação de exclusão.  
+Usuários: usuários autenticados.
+
+---
+
+## Saídas
+
+**RF024 – Visualização do Mapa Interativo:**  
+Exibe mapa contendo pontos de alagamento monitorados.
+
+Dados necessários: latitude, longitude, bairro, probabilidade, duração do evento.  
+Usuários: todos os usuários.
+
+---
+
+**RF025 – Visualização de Gráficos Climáticos:**  
+Apresenta gráficos com indicadores ambientais.
+
+Dados necessários: precipitação, vazão do rio, umidade do ar, pressão atmosférica.  
+Usuários: administradores.
+
+---
+
+**RF026 – Visualização de Previsões Climáticas:**  
+Permite visualizar previsões para diferentes intervalos de tempo.
+
+Dados necessários: intervalo de previsão, dados climáticos.  
+Usuários: administradores.
+
+---
+
+**RF027 – Visualização de Dashboard:**  
+Exibe indicadores gerais de monitoramento em tempo real.
+
+Dados necessários: indicadores climáticos, níveis de risco, alertas ativos.  
+Usuários: administradores.
+
+---
+
+**RF028 – Visualização de Histórico:**  
+Permite consultar registros históricos de eventos monitorados.
+
+Dados necessários: data, categoria, bairro, tipo de evento.  
+Usuários: administradores.
+
+---
+
+**RF029 – Visualização de Lista de Pontos:**  
+Exibe lista de pontos monitorados com resumo das informações.
+
+Dados necessários: bairro, probabilidade, duração do evento.  
+Usuários: administradores.
+
+---
+
+**RF030 – Visualização de Probabilidade de Alagamento:**  
+Apresenta em tempo real o nível de risco em determinada região.
+
+Dados necessários: região, índice de risco, nível de criticidade.  
+Usuários: todos os usuários.
+
+---
+
+**RF031 – Visualização de Câmeras:**  
+Permite visualizar imagens de câmeras públicas em tempo real.
+
+Dados necessários: identificação da câmera, localização, imagem.  
+Usuários: todos os usuários.
+
+---
+
+**RF032 – Visualização de Informações das Câmeras:**  
+Apresenta dados básicos de cada câmera monitorada.
+
+Dados necessários: nome da câmera, bairro, região.  
+Usuários: todos os usuários.
+
+---
+
+**RF033 – Visualização de Blog:**  
+Exibe publicações informativas sobre enchentes.
+
+Dados necessários: título, imagem, resumo.  
+Usuários: todos os usuários.
+
+---
+
+**RF034 – Exibição de Publicações Populares:**  
+Apresenta as publicações mais acessadas no blog.
+
+Dados necessários: número de acessos, título da publicação.  
+Usuários: todos os usuários.
+
+---
+
+**RF035 – Visualização da Página Sobre Nós:**  
+Exibe informações institucionais sobre a equipe e objetivos do projeto.
+
+Dados necessários: texto institucional, integrantes da equipe.  
+Usuários: todos os usuários.
+
+---
+
+**RF036 – Exibição de Ícones de Nível de Risco:**  
+Apresenta cores e ícones no mapa para representar níveis de criticidade.
+
+Dados necessários: nível de risco, cores, ícones.  
+Usuários: todos os usuários.
+
+---
+
+**RF037 – Busca de Regiões no Mapa:**  
+Permite pesquisar regiões ou pontos monitorados.
+
+Dados necessários: nome da região ou bairro.  
+Usuários: todos os usuários.
+
+---
+
+**RF038 – Exibição de Perfil do Usuário:**  
+Mostra foto de perfil e nome do usuário autenticado.
+
+Dados necessários: nome, foto de perfil.  
+Usuários: usuários autenticados.
+
+---
+
+**RF039 – Acesso à Página de Perfil:**  
+Permite acessar a página com dados pessoais do usuário.
+
+Dados necessários: dados do usuário.  
+Usuários: usuários autenticados.
+
+---
+
+**RF040 – Visualização de Dados da Conta:**  
+Exibe informações completas da conta do usuário.
+
+Dados necessários: nome, e-mail, data de nascimento, data de criação da conta.  
+Usuários: usuários autenticados.
+
+---
+
+**RF041 – Acesso ao Dashboard:**  
+Permite acessar a área principal de monitoramento do sistema.
+
+Dados necessários: dados de monitoramento.  
+Usuários: usuários autenticados.
+
+---
+
+**RF042 – Acesso à Página de Segurança:**  
+Permite acessar área de gerenciamento da conta.
+
+Dados necessários: dados da conta do usuário.  
+Usuários: usuários autenticados.
+
+---
+
+**RF043 – Edição de Dados Pessoais:**  
+Permite alterar dados cadastrais do usuário.
+
+Dados necessários: nome, e-mail, data de nascimento.  
+Usuários: usuários autenticados.
+
+---
+
+**RF044 – Alteração de Senha:**  
+Permite alterar a senha da conta mediante validação da senha atual.
+
+Dados necessários: senha atual, nova senha, confirmação da senha.  
+Usuários: usuários autenticados.
+
+---
+
+**RF045 – Confirmação de Ações Críticas:**  
+Solicita confirmação antes de ações importantes no sistema.
+
+Dados necessários: ação solicitada, confirmação do usuário.  
+Usuários: usuários autenticados.
+
+---
+
+**RF046 – Exclusão Permanente de Conta:**  
+Permite excluir permanentemente a conta do usuário após confirmação.
+
+Dados necessários: confirmação de exclusão.  
+Usuários: usuários autenticados.
+
+# 6. Requisitos não funcionais
+
+**RNF001** – O sistema deve armazenar senhas de forma criptografada, utilizando algoritmo seguro (ex.: bcrypt ou Argon2).
+
+**RNF002** – O sistema deve utilizar protocolo HTTPS em todas as requisições para garantir a confidencialidade e integridade dos dados transmitidos.
+
+**RNF003** – O sistema deve carregar a página inicial em até 5 segundos em condições normais de rede.
+
+**RNF004** – O sistema deve estar disponível 24 horas por dia, 7 dias por semana, com no mínimo 99% de uptime mensal.
+
+**RNF005** – O sistema deve realizar backups automáticos semanais do banco de dados.
+
+**RNF006** – O sistema deve ser responsivo e se adaptar automaticamente a diferentes resoluções de tela (desktop, tablet e mobile).
+
+**RNF007** – O sistema deve disponibilizar interface intuitiva, priorizando navegação simplificada e conteúdo objetivo.
+
+**RNF008** – O sistema deve ser desenvolvido utilizando Clean Architecture e Domain Driven Design, permitindo fácil manutenção e expansão.
+
+**RNF009** – O sistema deve manter logs de erros e acessos, permitindo auditoria e monitoramento.
+
+# 7. Diagrama de Caso de Uso
+
+![Diagrama de Caso de Uso do Sistema AQUA](/src/images/DiagramaAQUA.drawio.png)
+
+## Atores
+
+Os atores identificados no sistema são:
+
+- **Visitante**: pode cadastrar-se, visualizar informações como o mapa interativo e as câmeras de monitoramento;
+- **Usuário autenticado**: possui acesso a funcionalidades adicionais, como gerenciamento de perfil e realização de doações;
+- **Administrador**: responsável por funcionalidades mais avançadas, como registrar ocorrências, gerenciar câmeras e cadastrar pontos de alagamento.
+
+
+# 8. Regras de negócio
+
+**RN01** – O sistema deve permitir o cadastro de usuários com nome, e-mail, data de nascimento e senha.
+
+**RN02** – Apenas usuários administradores poderão acessar funções de gerenciamento do sistema.
+
+**RN03** – O cadastro, edição e remoção de pontos de monitoramento será restrito a usuários administradores.
+
+**RN04** – Cada ponto de monitoramento deve possuir coordenadas geográficas válidas (latitude e longitude).
+
+**RN05** – Os pontos monitorados devem estar localizados dentro da região de Joinville ou áreas próximas.
+
+**RN06** – O sistema deve registrar dados climáticos associados a cada ponto monitorado.
+
+**RN07** – Os dados climáticos devem incluir informações como precipitação, umidade do ar, pressão atmosférica e vazão do rio.
+
+**RN08** – O sistema deve armazenar o histórico de registros de monitoramento para consultas futuras.
+
+**RN09** – A visualização completa do histórico de registros será restrita a usuários administradores.
+
+**RN10** – O sistema deve calcular a probabilidade de alagamento com base em dados ambientais e históricos.
+
+**RN11** – A probabilidade de alagamento será gerada por um modelo de aprendizado de máquina.
+
+**RN12** – O sistema deve atualizar periodicamente os indicadores de risco de alagamento.
+
+**RN13** – Cada ponto monitorado deve possuir um índice de risco de alagamento associado.
+
+**RN14** – O sistema deve classificar o nível de risco conforme níveis de criticidade definidos.
+
+**RN15** – Os níveis de criticidade disponíveis devem ser: Crise, Alerta, Atenção, Mobilização e Normalidade.
+
+**RN16** – O sistema deve gerar notificações quando o índice de risco ultrapassar limites estabelecidos.
+
+**RN17** – As notificações devem estar associadas a regiões ou pontos monitorados.
+
+**RN18** – O sistema deve registrar o histórico de notificações enviadas.
+
+**RN19** – Os usuários poderão ativar ou desativar o recebimento de notificações por e-mail.
+
+**RN20** – O sistema deve monitorar alterações nos indicadores de risco em tempo real.
+
+**RN21** – O sistema deve permitir o registro de ocorrências relacionadas a eventos de alagamento.
+
+**RN22** – Cada ocorrência deve possuir informações de localização e situação do evento.
+
+**RN23** – O sistema deve integrar dados provenientes de câmeras públicas para apoio ao monitoramento.
+
+**RN24** – As câmeras cadastradas devem possuir identificação, localização e status de funcionamento.
+
+**RN25** – O sistema deve registrar estatísticas de acesso e consulta aos dados de monitoramento.
+
