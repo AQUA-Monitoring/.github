@@ -88,7 +88,19 @@ Além disso, o sistema registra dados meteorológicos por meio das entidades **W
 
 Por fim, **Notification** armazena notificações geradas pelo sistema e **Donation** registra doações realizadas, incluindo o tipo de pagamento armazenado em **Payment_Type**.
 
-# 5. Requisitos funcionais
+# 5. Diagrama de Caso de Uso
+
+![Diagrama de Caso de Uso do Sistema AQUA](/src/images/DiagramaAQUA.drawio.png)
+
+## Atores
+
+Os atores identificados no sistema são:
+
+- **Visitante**: pode cadastrar-se, visualizar informações como o mapa interativo e as câmeras de monitoramento;
+- **Usuário autenticado**: possui acesso a funcionalidades adicionais, como gerenciamento de perfil e realização de doações;
+- **Administrador**: responsável por funcionalidades mais avançadas, como registrar ocorrências, gerenciar câmeras e cadastrar pontos de alagamento.
+
+# 6. Requisitos funcionais
 
 ## Entradas
 
@@ -417,7 +429,7 @@ Permite excluir permanentemente a conta do usuário após confirmação.
 Dados necessários: confirmação de exclusão.  
 Usuários: usuários autenticados.
 
-# 6. Requisitos não funcionais
+# 7. Requisitos não funcionais
 
 **RNF001** – O sistema deve armazenar senhas de forma criptografada, utilizando algoritmo seguro (ex.: bcrypt ou Argon2).
 
@@ -436,18 +448,6 @@ Usuários: usuários autenticados.
 **RNF008** – O sistema deve ser desenvolvido utilizando Clean Architecture e Domain Driven Design, permitindo fácil manutenção e expansão.
 
 **RNF009** – O sistema deve manter logs de erros e acessos, permitindo auditoria e monitoramento.
-
-# 7. Diagrama de Caso de Uso
-
-![Diagrama de Caso de Uso do Sistema AQUA](/src/images/DiagramaAQUA.drawio.png)
-
-## Atores
-
-Os atores identificados no sistema são:
-
-- **Visitante**: pode cadastrar-se, visualizar informações como o mapa interativo e as câmeras de monitoramento;
-- **Usuário autenticado**: possui acesso a funcionalidades adicionais, como gerenciamento de perfil e realização de doações;
-- **Administrador**: responsável por funcionalidades mais avançadas, como registrar ocorrências, gerenciar câmeras e cadastrar pontos de alagamento.
 
 ---
 
