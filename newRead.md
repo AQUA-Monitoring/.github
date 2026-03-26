@@ -31,12 +31,10 @@ Equipe:
 
 Links do projeto:
 
-- Backend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_backend) e [Publicação](https://aqua.fabricadesoftware.ifc.edu.br/)
-- Frontend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_frontend) e [Publicação](http://aquaapi.fabricadesoftware.ifc.edu.br/)
-- [Requisitos](https://docs.google.com/document/d/1A_C9lhOZsPZwYGqqcZxbWc6av3OE1GLHt0uzGKmLIPI/edit?tab=t.3zpt241go3s)
-- [Regras de Negócio](https://docs.google.com/document/d/1A_C9lhOZsPZwYGqqcZxbWc6av3OE1GLHt0uzGKmLIPI/edit?tab=t.3zpt241go3s)
+- Backend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_backend) e [Publicação](http://api.aqua.michalski.app/)
+- Frontend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_frontend) e [Publicação](http://aqua.michalski.app/)
 
-# 1. Desenvolvimento
+# 1. Desenvolvimentoapi.aqua.michalski.app
 
 **Ordem de Serviço (O.S.)**
 
