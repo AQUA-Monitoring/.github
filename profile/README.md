@@ -76,18 +76,6 @@ O segundo é o **administrador**, responsável por gerenciar as informações do
 
 Com o **AQUA**, as informações sobre possíveis alagamentos ficam **centralizadas e mais fáceis de visualizar**, ajudando órgãos como a Defesa Civil no monitoramento das áreas de risco e permitindo que a população tenha acesso a informações importantes sobre a situação das regiões monitoradas.
 
-# 4. Modelagem de Dados
-
-A modelagem de dados do sistema **AQUA** foi definida por meio de um Diagrama Entidade-Relacionamento (DER), que representa as principais entidades do sistema e seus relacionamentos.
-
-A entidade **User** armazena os dados dos usuários da plataforma, enquanto **Address** registra as informações de localização associadas a usuários, organizações e câmeras. A entidade **NGO** representa organizações que podem atuar em ações de apoio à população.
-
-O sistema também possui as entidades **Camera** e **Flood_Point**, responsáveis por registrar as câmeras utilizadas no monitoramento e os pontos de alagamento identificados. As entidades **Neighborhood** e **Region** organizam as informações geográficas da cidade.
-
-Além disso, o sistema registra dados meteorológicos por meio das entidades **Weather** e **Forecast**, que armazenam informações climáticas e previsões do tempo. As entidades **Protocol**, **Response** e **Occurrence** são utilizadas para registrar ocorrências e ações relacionadas a eventos monitorados.
-
-Por fim, **Notification** armazena notificações geradas pelo sistema e **Donation** registra doações realizadas, incluindo o tipo de pagamento armazenado em **Payment_Type**.
-
 # 5. Diagrama de Caso de Uso
 
 ![Diagrama de Caso de Uso do Sistema AQUA](/src/images/DiagramaAQUA.drawio.png)
