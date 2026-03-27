@@ -31,7 +31,7 @@ Links do projeto:
 - Backend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_backend) e [Publicação](http://api.aqua.michalski.app/)
 - Frontend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_frontend) e [Publicação](http://aqua.michalski.app/)
 
-# 1. Desenvolvimentoapi.aqua.michalski.app
+# 1. Desenvolvimento
 
 **Ordem de Serviço (O.S.)**
 
@@ -44,8 +44,7 @@ Para isso, foi proposto o desenvolvimento do sistema AQUA, uma aplicação web v
 
 A empresa fictícia **AQUA Monitoramento Ambiental** desenvolveu um sistema voltado ao acompanhamento de condições climáticas e ao monitoramento de áreas com risco de alagamento em Joinville. O sistema foi criado com o objetivo de auxiliar a Defesa Civil e a população no acompanhamento de situações de risco relacionadas a chuvas intensas, transbordamento de rios e acúmulo de água em vias urbanas.
 
-O projeto foi idealizado por uma equipe de desenvolvedores interessados em utilizar tecnologia e análise de dados para melhorar a prevenção de desastres naturais nas cidades. O sistema busca reunir informações ambientais e geográficas em uma única plataforma, facilitando o acesso a dados importantes para tomada de decisões em momentos de risco.
-
+O projeto foi idealizado por uma equipe de desenvolvedores interessados em utilizar tecnologia e análise de dados para auxiliar na prevenção de alagementos na cidade. 
 
 Atualmente, a **Defesa Civil** enfrenta dificuldades relacionadas ao acompanhamento de áreas com risco de alagamento. Grande parte do trabalho realizado por esses órgãos ainda depende de processos manuais e da consulta a diversas fontes de informação separadas.
 
