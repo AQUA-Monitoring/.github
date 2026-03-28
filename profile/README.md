@@ -73,7 +73,85 @@ Com o **AQUA**, as informações sobre possíveis alagamentos ficam **centraliza
 
 # 4. Modelagem de Dados
 
-![Modelo Entidade-Relacionamento(MER)](/src/images/modeling.png)]
+![Modelo Entidade-Relacionamento (MER)](/src/images/modeling.png)
+
+Organiza-se, previamente, nestes moldes o Modelo Entidade-Relacionamento(MER).
+Dadas as Entidades e seus campos e/ou relacionamentos:
+
+- **user**
+  - Função: armazena os usuários do sistema.
+  - Principais atributos: nome, email, data_nascimento, tipo, google_sub, created_at, updated_at.
+  - Relações: 1:N com `payment_type`.
+
+- **payment_type**
+  - Função: guarda dados de pagamento (cartão, PIX, etc.).
+  - Principais atributos: tipo_identificacao, numero, emissor.
+  - Relações: N:1 com `user`; 1:N com `donation`.
+
+- **donation**
+  - Função: registra doações.
+  - Principais atributos: valor, descricao, data, payment_type_id.
+
+- **region**
+  - Função: regiões geográficas monitoradas.
+  - Principais atributos: nome, cidade, geometria (região geométrica), created_at, updated_at.
+  - Relações: 1:N com `neighborhood`.
+
+- **neighborhood**
+  - Função: bairros dentro de uma região.
+  - Principais atributos: nome, cidade, geometria.
+  - Relações: N:1 com `region`; 1:N com `address`.
+
+- **address**
+  - Função: endereços físicos (onde há câmeras, protocolos etc.).
+  - Principais atributos: cep, cidade, estado, latitude, longitude.
+  - Relações: N:1 com `neighborhood`; 1:N com `camera`, `protocol`, `flood_detection_record`.
+
+- **camera**
+  - Função: câmeras instaladas para monitoramento.
+  - Principais atributos: nome, url_video, descricao, status, address_id.
+  - Relações: N:1 com `address`; 1:N com `flood_detection_record`.
+
+- **flood_detection_record**
+  - Função: resultados da detecção automática de enchentes.
+  - Principais atributos: is_flooded (boolean), probabilidade (normal/médio/inundado), nivel_medio, data_imagem, camera_id, address_id.
+
+- **protocol**
+  - Função: protocolos administrativos (ocorrências formais).
+  - Principais atributos: status, assunto, descricao, arquivos, address_id.
+  - Relações: 1:N com `response`.
+
+- **response**
+  - Função: respostas associadas a um protocolo.
+  - Principais atributos: mensagem, arquivo, protocol_id.
+
+- **weather**
+  - Função: dados meteorológicos coletados.
+  - Principais atributos: data, latitude, longitude, chuva, temperatura, umidade, pressao, vazao_rio.
+  - Relações: 1:N com `flood_point`, 1:N com `notification`.
+
+- **flood_point**
+  - Função: pontos com probabilidade de enchente baseada em dados climáticos.
+  - Principais atributos: cidade, regiao, bairro, probabilidade, geometria, weather_id.
+
+- **notification**
+  - Função: notificações sobre risco de enchente.
+  - Principais atributos: data_inicio, data_fim, situacao, bairro, weather_id.
+
+- **forecast**
+  - Função: previsões meteorológicas futuras.
+  - Principais atributos: latitude, longitude, data probabilidade.
+  - Entidade isolada: sem relacionamento explícito.
+
+  Observações: Estuda-se relacionamento dessa com a tabela de notificação.
+
+- **occurrence**
+  - Função: registro de ocorrências históricas de enchentes.
+  - Principais atributos: data, situacao, tipo, bairro, cidade.
+
+- Observa-se, majoritariamente, a utilização dos atributos create_at e update_at, para uma melhor validação das alterações em cada instância.
+
+---
 
 # 5. Diagrama de Caso de Uso
 
