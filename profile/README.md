@@ -143,11 +143,14 @@ Dadas as Entidades e seus campos e/ou relacionamentos:
   - Principais atributos: latitude, longitude, data probabilidade.
   - Entidade isolada: sem relacionamento explícito.
 
-  Observações: Estuda-se relacionamento dessa com a tabela de notificação.
+  Observações: Estuda-se o relacionamento dessa entidade com a `notification`.
 
 - **occurrence**
   - Função: registro de ocorrências históricas de enchentes.
   - Principais atributos: data, situacao, tipo, bairro, cidade.
+  - Entidade isolada: sem relacionamento explícito.
+
+  Observações: Estuda-se o relacionamento dessa entidade com `weather`.
 
 - Observa-se, majoritariamente, a utilização dos atributos create_at e update_at, para uma melhor validação das alterações em cada instância.
 
