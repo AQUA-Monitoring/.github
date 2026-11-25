@@ -29,6 +29,9 @@ Links do projeto:
 - Frontend: [Repositório](https://github.com/AQUA-Monitoring/hackathon_frontend) e [Publicação](https://aqua.michalski.app/)
   - A branch atualizada do projeto em desenvolvimento no ano de 2026 é a `dev`.
   - A publicação hospedada no frontend se refere somente à versão antiga do projeto, apresenta na branch `main`, não contendo as alterações requisitadas.
+Usuário Válido(administrador):
+email: a@a.com
+senha: admin123
 
 # 1. Desenvolvimento
 
